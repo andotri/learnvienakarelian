@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(\Illuminate\Support\Facades\Auth::guest()){
+        return redirect('register');
+    }
+    else {
+        return redirect('home');
+    }
 });
 
 Auth::routes();

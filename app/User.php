@@ -2,38 +2,35 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function refreshWeeklyScore() {
+        $userLearnedObjectives = $this->userLearnedObjectives()
+            ->whereBetween('created_at', [Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
+            ->get();
+        $score = 0;
+        foreach ($userLearnedObjectives as $userLearnedObjective) {
+            if($userLearnedObjective->listening) $score += 100;
+            if($userLearnedObjective->reading) $score += 100;
+            if($userLearnedObjective->writing) $score += 100;
+        }
+        $this->weekly_score = $score;
+        $this->save();
+    }
+    public function refreshLifetimeScore() {
+        $userLearnedObjectives = $this->userLearnedObjectives()->get();
+        $score = 0;
+        foreach ($userLearnedObjectives as $userLearnedObjective) {
+            if($userLearnedObjective->listening) $score += 100;
+            if($userLearnedObjective->reading) $score += 100;
+            if($userLearnedObjective->writing) $score += 100;
+        }
+        $this->lifetime_score = $score;
+        $this->save();
+    }
+    public function userLearnedObjectives() {
+        return $this->hasMany('App\UserLearnedObjective');
+    }
 }
