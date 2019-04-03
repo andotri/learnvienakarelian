@@ -11,6 +11,13 @@
 |
 */
 
+// Authentication Routes...
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+// Registration Routes...
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
+
 Route::get('/', function () {
     if(\Illuminate\Support\Facades\Auth::guest()){
         return redirect('register');
@@ -20,6 +27,5 @@ Route::get('/', function () {
     }
 });
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
