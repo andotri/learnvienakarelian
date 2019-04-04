@@ -11,15 +11,8 @@
 |
 */
 
-// Authentication Routes...
-Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-
-// Registration Routes...
-Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('register', 'Auth\RegisterController@register');
-
 Route::get('/', function () {
-    if(\Illuminate\Support\Facades\Auth::guest()){
+    if(Auth::guest()){
         return redirect('register');
     }
     else {
@@ -27,5 +20,13 @@ Route::get('/', function () {
     }
 });
 
+Route::group(['middleware' => ['auth']], function() {
+    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+    Route::post('register', 'Auth\RegisterController@register');
+});
+
+Route::group(['middleware' => ['auth', 'lang']], function() {
+    Route::get('/home', 'HomeController@index')->name('home');
+});

@@ -70,6 +70,8 @@ class RegisterController extends Controller
         $user->ip_address_created = \Request::ip();
         $user->save();
 
+        session(['locale' => $data['language']]);
+
         return $user;
     }
 }
