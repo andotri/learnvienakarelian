@@ -20,12 +20,10 @@ Route::get('/', function () {
     }
 });
 
-Route::group(['middleware' => ['auth']], function() {
-    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-    Route::post('register', 'Auth\RegisterController@register');
-});
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
 
 Route::group(['middleware' => ['auth', 'lang']], function() {
     Route::get('/home', 'HomeController@index')->name('home');
