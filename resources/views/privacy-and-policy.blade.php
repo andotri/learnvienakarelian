@@ -1,4 +1,5 @@
-@extends('layouts.landing')
+@extends('layouts.master')
+@extends('layouts.welcome')
 
 @section('title', 'Privacy and Policy')
 
@@ -19,7 +20,3 @@
     </form>
     <hr>
 @endsection
-
-@push('scripts')
-    <script src="js/welcome.js"></script>
-@endpush

@@ -1,4 +1,5 @@
-@extends('layouts.landing')
+@extends('layouts.master')
+@extends('layouts.welcome')
 
 @section('title', 'Register')
 
@@ -36,6 +37,6 @@
     </div>
 @endsection
 
-@push('scripts')
+@push('page-scripts')
     <script src="js/welcome.js"></script>
 @endpush

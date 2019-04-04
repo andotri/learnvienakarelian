@@ -48,4 +48,8 @@
     p {
         font-size: 12.8px;
     }
+
+    #logo-text {
+        display: none;
+    }
 }

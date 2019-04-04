@@ -28,7 +28,7 @@ $factory->define(App\LearningObjective::class, function (Faker $faker) {
     }
 
     if(mt_rand(0, 1) == 1) {
-        $pictures = ['food_and_drink/apples.jpg', 'food_and_drink/bananas.jpg', 'food_and_drink/coffee.jpg', 'food_and_drink/milk.jpg'];
+        $pictures = ['food-and-drink/apples.jpg', 'food-and-drink/bananas.jpg', 'food-and-drink/coffee.jpg', 'food-and-drink/milk.jpg'];
         $picture = $pictures[mt_rand(0, 3)];
     }
     else {

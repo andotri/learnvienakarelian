@@ -1,6 +1,15 @@
-#logo-big {
-    width: 60%;
-}
 p {
     text-align: justify;
+}
 
+#logo {
+    width: 230px;
+}
+
+#logo-only {
+    width: 50px;
+}
+
+#logo-text {
+    width: 250px;
+}
