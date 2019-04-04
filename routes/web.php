@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    if(Auth::guest()){
+Route::group(['middleware' => ['guest']], function() {
+    Route::get('/', function () {
         return redirect('register');
-    }
-    else {
-        return redirect('home');
-    }
+    });
+
+    Route::get('privacy-and-policy', function () {
+        return view('privacy-and-policy');
+    });
 });
 
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
