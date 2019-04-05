@@ -27,5 +27,8 @@ Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('re
 Route::post('register', 'Auth\RegisterController@register');
 
 Route::group(['middleware' => ['auth', 'lang']], function() {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('home', 'HomeController@index');
+
+    Route::get('feedback', 'FeedbackController@index');
+    Route::post('feedback', 'FeedbackController@create');
 });

@@ -60,7 +60,7 @@
                             <a class="small" href="feedback"><i class="fas fa-question-circle"></i> Feedback</a>
                         </div>
                         <div class="float-right">
-                            <span class="small">&copy; {{ config('app.name') }} 2019</span>
+                            <span class="small">&copy; {{ config('app.name') }}</span>
                         </div>
                     </div>
                 </div>
