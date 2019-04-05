@@ -11,6 +11,6 @@ class CulturalInformationTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\CulturalInformation::class, 100)->create();
+        factory(App\CulturalInformation::class, 2)->create();
     }
 }

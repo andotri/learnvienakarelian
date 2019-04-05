@@ -34,62 +34,83 @@
                     <h6 class="m-0 font-weight-bold text-primary" style="float: right">Achievements</h6>
                 </div>
                 <div class="card-body">
-
+                    <p class="p-3 bg-gray-200 m-0">
+                        <a href="play/clothing" class="btn btn-success btn-circle btn-sm">
+                            <i class="fas fa-tshirt"></i>
+                        </a>
+                        <a href="play/clothing">
+                            Clothing
+                            <span style="float: right;">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </a>
+                    </p>
                     <p class="p-3 bg-gray-100 m-0">
-                        <i class="fas fa-utensils"></i> Food and Drink
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
+                        <a href="play/furniture" class="btn btn-success btn-circle btn-sm">
+                            <i class="fas fa-chair"></i>
+                        </a>
+                        <a href="play/furniture">
+                            Furniture
+                            <span style="float: right;">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </a>
                     </p>
                     <p class="p-3 bg-gray-200 m-0">
-                        <i class="fas fa-tshirt"></i> Clothing
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
+                        <a href="play/season" class="btn btn-success btn-circle btn-sm">
+                            <i class="fas fa-cloud-sun"></i>
+                        </a>
+                        <a href="play/season">
+                            Season
+                            <span style="float: right;">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </a>
                     </p>
                     <p class="p-3 bg-gray-100 m-0">
-                        <i class="fas fa-chair"></i> Furniture
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
+                        <a href="play/number" class="btn btn-success btn-circle btn-sm">
+                            <i class="fas fa-list-ol"></i>
+                        </a>
+                        <a href="play/number">
+                            Number
+                            <span style="float: right;">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </a>
                     </p>
                     <p class="p-3 bg-gray-200 m-0">
-                        <i class="fas fa-cloud-sun"></i> Weather and Season
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
+                        <a href="play/body" class="btn btn-success btn-circle btn-sm">
+                            <i class="fas fa-child"></i>
+                        </a>
+                        <a href="play/body">
+                            Body
+                            <span style="float: right;">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </a>
                     </p>
                     <p class="p-3 bg-gray-100 m-0">
-                        <i class="fas fa-list-ol"></i> Number
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
-                    </p>
-                    <p class="p-3 bg-gray-200 m-0">
-                        <i class="fas fa-child"></i> Body
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
-                    </p>
-                    <p class="p-3 bg-gray-100 m-0">
-                        <i class="fas fa-calendar-alt"></i> Days of the weeks and months
-                        <span style="float: right;">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
+                        <a href="play/days-and-months" class="btn btn-success btn-circle btn-sm">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a href="play/days-and-months">
+                            Days  and months
+                            <span style="float: right;">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </a>
                     </p>
                 </div>
             </div>

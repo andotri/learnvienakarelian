@@ -11,6 +11,18 @@ class UserLearnedObjectivesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\UserLearnedObjective::class, 3000)->create();
+
+    }
+
+    private function create($user_id, $learning_objective_id, $listening, $reading, $writing, $created_at) {
+        return [
+            'user_id' => $user_id,
+            'learning_objective_id' => $learning_objective_id,
+            'listening' => $listening,
+            'reading' => $reading,
+            'writing' => $writing,
+            'created_at' => $created_at,
+            'updated_at' => $created_at,
+        ];
     }
 }
