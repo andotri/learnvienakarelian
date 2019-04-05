@@ -52,6 +52,21 @@
             </div>
             <!-- End of Main Content -->
 
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="text-center">
+                        <div class="float-left">
+                            <a class="small" href="feedback"><i class="fas fa-question-circle"></i> Feedback</a>
+                        </div>
+                        <div class="float-right">
+                            <span class="small">&copy; {{ config('app.name') }} 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
         </div>
         <!-- End of Content Wrapper -->
 
