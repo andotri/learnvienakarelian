@@ -2,12 +2,15 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
+    use SoftDeletes;
+
     public function refreshWeeklyScore() {
         $userLearnedObjectives = $this->userLearnedObjectives()
             ->whereBetween('created_at', [Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])

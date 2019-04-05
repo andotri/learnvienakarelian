@@ -22,7 +22,7 @@
                             <br>Thanks for your feedback.
                         </div>
                     @endif
-                    <form class="user" method="POST" action="feedback">
+                    <form class="user" method="POST" action="feedback/create">
                         @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" id="title" name="title" placeholder="Title" required autofocus>
