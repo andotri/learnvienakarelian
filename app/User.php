@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -19,6 +21,7 @@ class User extends Authenticatable
         $this->weekly_score = $score;
         $this->save();
     }
+
     public function refreshLifetimeScore() {
         $userLearnedObjectives = $this->userLearnedObjectives()->get();
         $score = 0;
@@ -30,6 +33,23 @@ class User extends Authenticatable
         $this->lifetime_score = $score;
         $this->save();
     }
+
+    public function getRank() {
+        $rank = DB::table('users')
+            ->where('weekly_score', '>=', $this->weekly_score)
+            ->count();
+
+        return $this->ordinal($rank);
+    }
+
+    private function ordinal($number) {
+        $ends = array('th','st','nd','rd','th','th','th','th','th','th');
+        if ((($number % 100) >= 11) && (($number%100) <= 13))
+            return $number. 'th';
+        else
+            return $number. $ends[$number % 10];
+    }
+
     public function userLearnedObjectives() {
         return $this->hasMany('App\UserLearnedObjective');
     }

@@ -31,6 +31,9 @@
 
         gtag('config', 'UA-137723588-1');
     </script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=1433584060128882&autoLogAppEvents=1"></script>
 </head>
 @section('body')
 @show

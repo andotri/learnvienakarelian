@@ -13,19 +13,27 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                    <div class="d-sm-inline-block">
-                        <img src="images/logo-only.png" id="logo-only">
-                    </div>
-                    &nbsp;
-                    <div class="d-sm-inline-block">
-                        <img src="images/logo-text.png" id="logo-text">
-                    </div>
+                    @if(Request::is('home'))
+                        <div class="d-sm-inline-block">
+                            <img src="images/logo-only.png" id="logo-only">
+                        </div>
+                        &nbsp;
+                        <div class="d-sm-inline-block">
+                            <img src="images/logo-text.png" id="logo-text">
+                        </div>
+                    @else
+                        <div class="navbar-nav nav-item">
+                            <a class="nav-link" href="home" role="button">
+                                <i class="fas fa-arrow-left fa-2x"></i>
+                            </a>
+                        </div>
+                    @endif
 
-                    <div class="navbar-nav ml-auto nav-item dropdown no-arrow">
+                    <div class="navbar-nav nav-item ml-auto">
                         <!-- Nav Item - User Information -->
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="profile" role="button">
                             <span class="mr-2 d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
-                            <i class="fas fa-user-circle fa-3x"></i>
+                            <i class="fas fa-user-circle fa-2x"></i>
                         </a>
                     </div>
 
