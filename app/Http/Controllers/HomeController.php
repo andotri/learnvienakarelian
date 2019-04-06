@@ -15,7 +15,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $rank = Auth::user()->getRank();
+        $user = Auth::user();
+        $user->refreshWeeklyScore();
+        $user->refreshLifetimeScore();
+        $rank = $user->getRank();
+
         return view('home', [
             'rank' => $rank
         ]);
