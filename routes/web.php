@@ -36,3 +36,7 @@ Route::group(['middleware' => ['auth', 'lang']], function() {
     Route::post('profile/update', 'ProfileController@update');
     Route::get('profile/delete', 'ProfileController@delete');
 });
+
+Route::get('/feedback', function () {
+    return redirect('https://triando.typeform.com/to/ubYyq8');
+});
