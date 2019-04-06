@@ -11,6 +11,10 @@ class LearningObjectivesTableSeeder extends Seeder
      */
     public function run()
     {
+        $this->create('food-and-drink', 'easy','en','fi','vk','food-and-drink/apples.jpg', null);
+        $this->create('food-and-drink', 'medium','en en','fi fi','vk vk',null, 1);
+        $this->create('food-and-drink', 'hard','en en en','fi fi fi','vk vk vk',null, 2);
+
         $this->create('clothing', 'easy','en','fi','vk','food-and-drink/apples.jpg', null);
         $this->create('clothing', 'medium','en en','fi fi','vk vk',null, 1);
         $this->create('clothing', 'hard','en en en','fi fi fi','vk vk vk',null, 2);

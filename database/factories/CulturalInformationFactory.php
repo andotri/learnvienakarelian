@@ -3,7 +3,7 @@
 use Faker\Generator as Faker;
 
 $factory->define(App\CulturalInformation::class, function (Faker $faker) {
-    $topic_names = ['Topic 1', 'Topic 2', 'Topic 3', 'Topic 4', 'Topic 5', 'Topic 6', 'Topic 7'];
+    $topic_names = ['food_and_drink', 'clothing', 'furniture', 'season', 'number', 'body', 'days-and-months'];
     $topic_name = $topic_names[mt_rand(0, 1)];
 
     $english = $faker->text;
