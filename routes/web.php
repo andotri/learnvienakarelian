@@ -29,14 +29,14 @@ Route::post('register', 'Auth\RegisterController@register');
 Route::group(['middleware' => ['auth', 'lang']], function() {
     Route::get('home', 'HomeController@index');
 
-    Route::get('feedback', 'FeedbackController@index');
-    Route::post('feedback/create', 'FeedbackController@create');
+//    Route::get('feedback', 'FeedbackController@index');
+//    Route::post('feedback/create', 'FeedbackController@create');
 
     Route::get('profile', 'ProfileController@index');
     Route::post('profile/update', 'ProfileController@update');
     Route::get('profile/delete', 'ProfileController@delete');
 });
 
-Route::get('/feedback', function () {
+Route::get('feedback', function () {
     return redirect('https://triando.typeform.com/to/ubYyq8');
 });
