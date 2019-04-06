@@ -26,7 +26,7 @@
                         <tbody>
                         @foreach($users as $user)
                             <tr>
-                                <th scope="row">{{ $loop->iteration }}</th>
+                                <th scope="row">{{ isset($_GET['page']) ? $loop->iteration + ($_GET['page'] - 1) * 10 : $loop->iteration}}</th>
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->weekly_score }}</td>
                                 <td>{{ $user->lifetime_score }}</td>
