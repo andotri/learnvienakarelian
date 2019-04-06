@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
 
             $table->string('name');
-            $table->string('weekly_rank')->nullable();
+            $table->integer('weekly_rank')->default(0);
             $table->integer('weekly_score')->default(0);
             $table->integer('lifetime_score')->default(0);
             $table->enum('language', ['en', 'fi']);

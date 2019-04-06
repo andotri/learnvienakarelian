@@ -39,15 +39,19 @@ class User extends Authenticatable
     }
 
     public function setRank() {
+        if($this->weekly_score === 0) {
+            return -1;
+        }
+
         $rank = DB::table('users')
             ->where('weekly_score', '>=', $this->weekly_score)
             ->count();
 
-        $this->weekly_rank = $this->ordinal($rank);
+        $this->weekly_rank = $rank;
         $this->save();
     }
 
-    private function ordinal($number) {
+    public function ordinal($number) {
         $ends = array('th','st','nd','rd','th','th','th','th','th','th');
         if ((($number % 100) >= 11) && (($number%100) <= 13))
             return $number. 'th';

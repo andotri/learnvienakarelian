@@ -21,6 +21,8 @@ class HomeController extends Controller
         $user->setLifetimeScore();
         $user->setRank();
 
+        $rank = $user->ordinal($user->weekly_rank);
+
         $levels = $user->getLevels();
         $stars = [];
 
@@ -29,6 +31,7 @@ class HomeController extends Controller
         }
 
         return view('home', [
+            'rank' => $rank,
             'levels' => $levels,
             'stars' => $stars,
         ]);
