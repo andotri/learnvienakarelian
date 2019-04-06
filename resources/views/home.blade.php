@@ -35,10 +35,10 @@
                 </div>
                 <div class="card-body">
                     <p class="p-3 bg-gray-200 m-0">
-                        <a href="play/food-and-drink" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/food-and-drink" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-utensils"></i>
                         </a>
-                        <a href="play/food-and-drink">
+                        <a href="{{ URL::to('/') }}/play/food-and-drink">
                             Food and Drink
                             <span style="float: right;">
                                 {!! $stars[0] !!}
@@ -46,10 +46,10 @@
                         </a>
                     </p>
                     <p class="p-3 bg-gray-100 m-0">
-                        <a href="play/clothing" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/clothing" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-tshirt"></i>
                         </a>
-                        <a href="play/clothing">
+                        <a href="{{ URL::to('/') }}/play/clothing">
                             Clothing
                             <span style="float: right;">
                                 {!! $stars[1] !!}
@@ -57,10 +57,10 @@
                         </a>
                     </p>
                     <p class="p-3 bg-gray-200 m-0">
-                        <a href="play/furniture" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/furniture" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-chair"></i>
                         </a>
-                        <a href="play/furniture">
+                        <a href="{{ URL::to('/') }}/play/furniture">
                             Furniture
                             <span style="float: right;">
                                 {!! $stars[2] !!}
@@ -68,10 +68,10 @@
                         </a>
                     </p>
                     <p class="p-3 bg-gray-100 m-0">
-                        <a href="play/season" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/season" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-cloud-sun"></i>
                         </a>
-                        <a href="play/season">
+                        <a href="{{ URL::to('/') }}/play/season">
                             Season
                             <span style="float: right;">
                                 {!! $stars[3] !!}
@@ -79,10 +79,10 @@
                         </a>
                     </p>
                     <p class="p-3 bg-gray-200 m-0">
-                        <a href="play/number" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/number" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-list-ol"></i>
                         </a>
-                        <a href="play/number">
+                        <a href="{{ URL::to('/') }}/play/number">
                             Number
                             <span style="float: right;">
                                 {!! $stars[4] !!}
@@ -90,10 +90,10 @@
                         </a>
                     </p>
                     <p class="p-3 bg-gray-100 m-0">
-                        <a href="play/body" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/body" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-child"></i>
                         </a>
-                        <a href="play/body">
+                        <a href="{{ URL::to('/') }}/play/body">
                             Body
                             <span style="float: right;">
                                 {!! $stars[5] !!}
@@ -101,10 +101,10 @@
                         </a>
                     </p>
                     <p class="p-3 bg-gray-200 m-0">
-                        <a href="play/days-and-months" class="btn btn-success btn-circle btn-sm">
+                        <a href="{{ URL::to('/') }}/play/days-and-months" class="btn btn-success btn-circle btn-sm">
                             <i class="fas fa-calendar-alt"></i>
                         </a>
-                        <a href="play/days-and-months">
+                        <a href="{{ URL::to('/') }}/play/days-and-months">
                             Days  and months
                             <span style="float: right;">
                                 {!! $stars[6] !!}

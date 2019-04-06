@@ -35,6 +35,8 @@ Route::group(['middleware' => ['auth', 'lang']], function() {
     Route::get('profile', 'ProfileController@index');
     Route::post('profile/update', 'ProfileController@update');
     Route::get('profile/delete', 'ProfileController@delete');
+
+    Route::get('play/{topic}', 'PlayController@index');
 });
 
 Route::get('feedback', function () {

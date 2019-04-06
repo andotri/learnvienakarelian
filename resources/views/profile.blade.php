@@ -43,7 +43,7 @@
                     </form>
                     <hr>
                     <div class="text-center">
-                        <a class="btn btn-danger" href="profile/delete" onclick="return confirm('Are you sure to delete your account?')">Delete my account</a>
+                        <a class="btn btn-danger" href="{{ URL::to('/') }}/profile/delete" onclick="return confirm('Are you sure to delete your account?')">Delete my account</a>
                     </div>
                 </div>
             </div>

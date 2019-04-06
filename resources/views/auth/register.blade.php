@@ -33,10 +33,10 @@
     </form>
     <hr>
     <div class="text-center">
-        <a class="small" href="privacy-and-policy">Privacy and Policy</a>
+        <a class="small" href="{{ URL::to('/') }}/privacy-and-policy">Privacy and Policy</a>
     </div>
 @endsection
 
 @push('page-scripts')
-    <script src="js/welcome.js"></script>
+    <script src="{{ asset('js/welcome.js') }}"></script>
 @endpush
