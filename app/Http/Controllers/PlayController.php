@@ -20,8 +20,31 @@ class PlayController extends Controller
         }
 
         if(is_null($userLearnedObjective->reading) || !$userLearnedObjective->reading) {
-            return view('play.reading', [
-            ]);
+            if($userLearnedObjective->level === 'easy') {
+                $learningObjective = $userLearnedObjective->learningObjective()->first();
+                $word = $learningObjective->viena_karelian;
+                $learnedObjectiveId = $learningObjective->id;
+
+                $otherLearningObjectives = LearningObjective::
+                where('level', $userLearnedObjective->level)->
+                where('id', '!=', $learnedObjectiveId)->
+                inRandomOrder()->take(3)->get();
+
+                $images[] = [$learningObjective->id, $learningObjective->picture];
+                foreach ($otherLearningObjectives as $otherLearningObjective) {
+                    $images[] = [$otherLearningObjective->id, $otherLearningObjective->picture];
+                }
+
+                shuffle($images);
+
+                return view('play.reading-easy', [
+                    'topic_name' => $topic_name,
+                    'word' => $word,
+                    'images' => $images,
+                    'learningObjective' => $learningObjective,
+                    'userLearnedObjective' => $userLearnedObjective,
+                ]);
+            }
         }
         else if(is_null($userLearnedObjective->listening) || !$userLearnedObjective->listening) {
             echo 'listening';

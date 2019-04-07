@@ -22,7 +22,7 @@
                             <br>Thanks for your update.
                         </div>
                     @endif
-                    <form class="user" method="POST" action="profile/update">
+                    <form class="user" method="POST" action="{{ URL::to('/') }}/profile/update">
                         @csrf
                         <div class="form-group">
                             <select class="form-control" id="language" name="language" required>

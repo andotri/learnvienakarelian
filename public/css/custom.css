@@ -13,3 +13,14 @@ p {
 #logo-text {
     width: 250px;
 }
+
+.pictureOption {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

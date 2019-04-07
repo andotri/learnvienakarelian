@@ -15,11 +15,11 @@
 
                     @if(Request::is('home'))
                         <div class="d-sm-inline-block">
-                            <img src="images/logo-only.png" id="logo-only">
+                            <img src="{{ asset('images/logo-only.png') }}" id="logo-only">
                         </div>
                         &nbsp;
                         <div class="d-sm-inline-block">
-                            <img src="images/logo-text.png" id="logo-text">
+                            <img src="{{ asset('images/logo-text.png') }}" id="logo-text">
                         </div>
                     @else
                         <div class="navbar-nav nav-item">
