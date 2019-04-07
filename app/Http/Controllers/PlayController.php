@@ -20,8 +20,8 @@ class PlayController extends Controller
         }
 
         if(is_null($userLearnedObjective->reading) || !$userLearnedObjective->reading) {
-            echo 'reading';
-            echo $userLearnedObjective->level;
+            return view('play.reading', [
+            ]);
         }
         else if(is_null($userLearnedObjective->listening) || !$userLearnedObjective->listening) {
             echo 'listening';
