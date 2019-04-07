@@ -12,14 +12,10 @@ class PlayController extends Controller
     public function index(Request $request, $topic_name) {
         $user = Auth::user();
 
-        $userLearnedObjective = $user->userLearnedObjectives()
-            ->where('topic_name', $topic_name)
-            ->orderBy('id', 'desc')
-            ->first();
-
-        $level = $this->getNextLevel($userLearnedObjective);
+        $userLearnedObjective = $this->getLastUserLearnedObjective($user, $topic_name);
 
         if($this->isValidToCreate($user, $topic_name, $userLearnedObjective)) {
+            $level = $this->getNextLevel($userLearnedObjective);
             $userLearnedObjective = $this->createUserLearnedObjective($user, $topic_name, $level);
         }
 
@@ -41,6 +37,15 @@ class PlayController extends Controller
                 'message' => 'You have completed all levels in this topic.',
             ]);
         }
+    }
+
+    private function getLastUserLearnedObjective($user, $topic_name) {
+        $userLearnedObjective = $user->userLearnedObjectives()
+            ->where('topic_name', $topic_name)
+            ->orderBy('id', 'desc')
+            ->first();
+
+        return $userLearnedObjective;
     }
 
     private function getNextLevel($userLearnedObjective) {
