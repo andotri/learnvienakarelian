@@ -45,6 +45,9 @@ class PlayController extends Controller
                     'userLearnedObjective' => $userLearnedObjective,
                 ]);
             }
+            else {
+                echo "reading medium and hard";
+            }
         }
         else if(is_null($userLearnedObjective->listening) || !$userLearnedObjective->listening) {
             if($userLearnedObjective->level === 'easy') {
@@ -71,6 +74,9 @@ class PlayController extends Controller
                     'learningObjective' => $learningObjective,
                     'userLearnedObjective' => $userLearnedObjective,
                 ]);
+            }
+            else {
+                echo "listening medium and hard";
             }
         }
         else if(is_null($userLearnedObjective->writing) || !$userLearnedObjective->writing) {
