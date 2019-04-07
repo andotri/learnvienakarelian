@@ -60,7 +60,7 @@ class User extends Authenticatable
     }
 
     public function getLevels() {
-        $topicNames = ['food_and_drink', 'clothing', 'furniture', 'season', 'number', 'body', 'days-and-months'];
+        $topicNames = ['food_and_drink', 'clothing', 'furniture', 'season', 'number', 'body', 'days_and_months'];
 
         $topicLevels = [
             ['food_and_drink', 0],
@@ -69,7 +69,7 @@ class User extends Authenticatable
             ['season', 0],
             ['number', 0],
             ['body', 0],
-            ['months', 0],
+            ['days_and_months', 0],
         ];
 
         foreach ($this->userLearnedObjectives()->get() as $userLearnedObjective) {

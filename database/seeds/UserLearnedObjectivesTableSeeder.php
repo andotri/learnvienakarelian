@@ -12,31 +12,33 @@ class UserLearnedObjectivesTableSeeder extends Seeder
      */
     public function run()
     {
-        $this->create(11,1,true,true,true);
-        $this->create(11,2,true,true,true);
-        $this->create(11,3,true,true,true);
+        $this->create(11,1,'food_and_drink','easy',true,true,true);
+        $this->create(11,2,'food_and_drink','medium',true,true,true);
+        $this->create(11,3,'food_and_drink','hard',true,true,true);
 
-        $this->create(11,4,true,true,true);
-        $this->create(11,5,true,true,true);
+        $this->create(11,4,'clothing','easy',true,true,true);
+        $this->create(11,5,'clothing','medium',true,true,true);
 
-        $this->create(11,7,true,true,true);
+        $this->create(11,7,'furniture','easy',true,true,true);
 
-        $this->create(11,10,true,true,true);
-        $this->create(11,11,true,true,true);
-        $this->create(11,12,true,false,false);
+        $this->create(11,10,'season','easy',true,true,true);
+        $this->create(11,11,'season','medium',true,true,true);
+        $this->create(11,12,'season','hard',true,false,false);
 
-        $this->create(11,13,true,true,true);
-        $this->create(11,14,true,null,null);
+        $this->create(11,13,'number','easy',true,true,true);
+        $this->create(11,14,'number','medium',true,null,null);
 
-        $this->create(11,16,true,false,null);
+        $this->create(11,16,'body','easy',true,false,null);
     }
 
-    private function create($user_id, $learning_objective_id, $reading, $listening, $writing) {
+    private function create($user_id, $learning_objective_id, $topic_name, $level, $reading, $listening, $writing) {
         $created_at = $this->rand_date('2019-03-06', '2019-04-06');
 
         \App\UserLearnedObjective::create([
             'user_id' => $user_id,
             'learning_objective_id' => $learning_objective_id,
+            'topic_name' => $topic_name,
+            'level' => $level,
             'reading' => $reading,
             'listening' => $listening,
             'writing' => $writing,

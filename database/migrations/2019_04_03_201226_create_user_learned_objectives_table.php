@@ -22,6 +22,9 @@ class CreateUserLearnedObjectivesTable extends Migration
             $table->unsignedBigInteger('learning_objective_id');
             $table->foreign('learning_objective_id')->references('id')->on('learning_objectives');
 
+            $table->string('topic_name');
+            $table->enum('level', ['easy', 'medium', 'hard']);
+
             $table->boolean('reading')->nullable();
             $table->boolean('listening')->nullable();
             $table->boolean('writing')->nullable();

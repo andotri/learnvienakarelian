@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @extends('layouts.app')
 
-@section('title', 'Play')
+@section('title', 'Leaderboard')
 
 @section('content')
     <!-- Content Row -->

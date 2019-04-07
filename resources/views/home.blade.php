@@ -31,7 +31,7 @@
                     <h6 class="m-0 font-weight-bold text-primary" style="float: right">Achievements</h6>
                 </div>
                 <div class="card-body">
-                    <a href="{{ URL::to('/') }}/play/food-and-drink">
+                    <a href="{{ URL::to('/') }}/play/food_and_drink">
                         <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-utensils"></i>
@@ -97,7 +97,7 @@
                             </span>
                         </p>
                     </a>
-                    <a href="{{ URL::to('/') }}/play/days-and-months">
+                    <a href="{{ URL::to('/') }}/play/days_and_months">
                         <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-calendar-alt"></i>
