@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @extends('layouts.app')
 
-@section('title', 'Reading - Easy')
+@section('title', 'Listening - Easy')
 
 @section('content')
     <!-- Content Row -->
@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-body">
                     <div class="progress mb-4">
-                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p>Select a picture that you hear</p>
                     <div class="form-group">

@@ -108,6 +108,15 @@
                             </span>
                         </p>
                     </a>
+                    <hr>
+                    <a href="{{ URL::to('/') }}/cultural-information">
+                        <p class="p-3 bg-gray-200 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-file-alt"></i>
+                            </span>
+                            Cultural Information
+                        </p>
+                    </a>
                 </div>
             </div>
 

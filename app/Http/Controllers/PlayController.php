@@ -74,8 +74,15 @@ class PlayController extends Controller
             }
         }
         else if(is_null($userLearnedObjective->writing) || !$userLearnedObjective->writing) {
-            echo 'writing';
-            echo $userLearnedObjective->level;
+            $learningObjective = $userLearnedObjective->learningObjective()->first();
+            $word = $learningObjective->viena_karelian;
+
+            return view('play.writing', [
+                'topic_name' => $topic_name,
+                'word' => $word,
+                'learningObjective' => $learningObjective,
+                'userLearnedObjective' => $userLearnedObjective,
+            ]);
         }
         else {
             return view('notification', [
