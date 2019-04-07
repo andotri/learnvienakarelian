@@ -31,83 +31,83 @@
                     <h6 class="m-0 font-weight-bold text-primary" style="float: right">Achievements</h6>
                 </div>
                 <div class="card-body">
-                    <p class="p-3 bg-gray-200 m-0">
-                        <a href="{{ URL::to('/') }}/play/food-and-drink" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-utensils"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/food-and-drink">
+                    <a href="{{ URL::to('/') }}/play/food-and-drink">
+                        <p class="p-3 bg-gray-200 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-utensils"></i>
+                            </span>
                             Food and Drink
                             <span style="float: right;">
                                 {!! $stars[0] !!}
                             </span>
-                        </a>
-                    </p>
-                    <p class="p-3 bg-gray-100 m-0">
-                        <a href="{{ URL::to('/') }}/play/clothing" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-tshirt"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/clothing">
+                        </p>
+                    </a>
+                    <a href="{{ URL::to('/') }}/play/clothing">
+                        <p class="p-3 bg-gray-100 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-tshirt"></i>
+                            </span>
                             Clothing
                             <span style="float: right;">
                                 {!! $stars[1] !!}
                             </span>
-                        </a>
-                    </p>
-                    <p class="p-3 bg-gray-200 m-0">
-                        <a href="{{ URL::to('/') }}/play/furniture" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-chair"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/furniture">
+                        </p>
+                    </a>
+                    <a href="{{ URL::to('/') }}/play/furniture">
+                        <p class="p-3 bg-gray-200 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-chair"></i>
+                            </span>
                             Furniture
                             <span style="float: right;">
                                 {!! $stars[2] !!}
                             </span>
-                        </a>
-                    </p>
-                    <p class="p-3 bg-gray-100 m-0">
-                        <a href="{{ URL::to('/') }}/play/season" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-cloud-sun"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/season">
+                        </p>
+                    </a>
+                    <a href="{{ URL::to('/') }}/play/season">
+                        <p class="p-3 bg-gray-100 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-cloud-sun"></i>
+                            </span>
                             Season
                             <span style="float: right;">
                                 {!! $stars[3] !!}
                             </span>
-                        </a>
-                    </p>
-                    <p class="p-3 bg-gray-200 m-0">
-                        <a href="{{ URL::to('/') }}/play/number" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-list-ol"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/number">
+                        </p>
+                    </a>
+                    <a href="{{ URL::to('/') }}/play/number">
+                        <p class="p-3 bg-gray-200 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-list-ol"></i>
+                            </span>
                             Number
                             <span style="float: right;">
                                 {!! $stars[4] !!}
                             </span>
-                        </a>
-                    </p>
-                    <p class="p-3 bg-gray-100 m-0">
-                        <a href="{{ URL::to('/') }}/play/body" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-child"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/body">
+                        </p>
+                    </a>
+                    <a href="{{ URL::to('/') }}/play/body">
+                        <p class="p-3 bg-gray-100 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-child"></i>
+                            </span>
                             Body
                             <span style="float: right;">
                                 {!! $stars[5] !!}
                             </span>
-                        </a>
-                    </p>
-                    <p class="p-3 bg-gray-200 m-0">
-                        <a href="{{ URL::to('/') }}/play/days-and-months" class="btn btn-success btn-circle btn-sm">
-                            <i class="fas fa-calendar-alt"></i>
-                        </a>
-                        <a href="{{ URL::to('/') }}/play/days-and-months">
+                        </p>
+                    </a>
+                    <a href="{{ URL::to('/') }}/play/days-and-months">
+                        <p class="p-3 bg-gray-200 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-calendar-alt"></i>
+                            </span>
                             Days  and months
                             <span style="float: right;">
                                 {!! $stars[6] !!}
                             </span>
-                        </a>
-                    </p>
+                        </p>
+                    </a>
                 </div>
             </div>
 
