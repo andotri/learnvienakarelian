@@ -31,7 +31,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="@lang('default.namePlaceholder')" required value="{{ Auth::user()->name === 'Anonymous' ? '' : Auth::user()->name }}">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="@lang('default.namePlaceholder')" required value="{{ Auth::user()->name === 'Anonymous' ? '' : Auth::user()->name }}" disabled>
                         </div>
                         <div class="form-group">
                             <div class="custom-control custom-checkbox small">
