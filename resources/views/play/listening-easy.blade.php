@@ -20,7 +20,7 @@
                     <p>Select a picture that you hear</p>
                     <div class="form-group">
                         <audio class="center" controls>
-                            <source src="{{ asset('voices/' . $learningObjective->level . '/' . $learningObjective->id . '.mp3') }}" type="audio/mpeg">
+                            <source src="{{ asset($learningObjective->voice) }}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                         @foreach($images as $image)

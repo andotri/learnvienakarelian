@@ -17,10 +17,10 @@
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p>Select a sentence that you hear <code>{{ $word }}</code></p>
+                    <p>Select a sentence that you hear</p>
                     <div class="form-group">
                         <audio class="center" controls>
-                            <source src="{{ asset('voices/' . $learningObjective->level . '/' . $learningObjective->id . '.mp3') }}" type="audio/mpeg">
+                            <source src="{{ asset($learningObjective->voice) }}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                         @foreach($sentences as $sentence)
