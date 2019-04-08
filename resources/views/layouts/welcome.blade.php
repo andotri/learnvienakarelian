@@ -15,7 +15,7 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <img src="images/logo.png" id="logo">
+                                        <img src="{{ asset('images/logo.png') }}" id="logo">
                                         <br><br>
                                     </div>
                                     @section('content')

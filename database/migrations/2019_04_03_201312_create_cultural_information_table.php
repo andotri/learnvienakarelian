@@ -16,10 +16,8 @@ class CreateCulturalInformationTable extends Migration
         Schema::create('cultural_information', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('topic_name');
             $table->string('english');
             $table->string('finnish');
-            $table->string('picture')->nullable();
 
             $table->timestamps();
         });

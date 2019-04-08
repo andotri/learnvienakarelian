@@ -32,7 +32,7 @@
     <script>
         function checkAnswer() {
             var answer = '{{ $learningObjective->english }}';
-            if($('#writing').val() == answer) {
+            if($('#writing').val().toUpperCase() == answer.toUpperCase()) {
                 alert("Correct");
                 window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=writing&answer=true";
             }

@@ -22,9 +22,13 @@
                             <h6 class="m-0 font-weight-bold text-primary">Do you know?</h6>
                         </div>
                         <div class="card-body">
-                            <p>
-                                {{ $description }}
-                            </p>
+                            <div class="text-center">
+                                <img src="{{ asset('images/kalevala.jpg') }}" id="logo">
+                                <br><br>
+                                <p>
+                                    {{ $description }}
+                                </p>
+                            </div>
                             <a href="{{ URL::to('/') }}" class="btn btn-success btn-user btn-block">
                                 Completed the level
                             </a>
