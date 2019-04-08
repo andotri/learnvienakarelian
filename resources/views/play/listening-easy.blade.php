@@ -23,6 +23,7 @@
                             <source src="{{ asset($learningObjective->voice) }}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
+                        <br>
                         @foreach($images as $image)
                             <img class="picture" src="{{ asset($image[1]) }}" id="{{ $image[0] }}" onclick="changeOpacity({{ $image[0] }})">
                         @endforeach

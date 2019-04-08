@@ -17,12 +17,13 @@
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p>Select a sentence that you hear</p>
+                    <p>@lang('default.selectSentenceListening')</p>
                     <div class="form-group">
                         <audio class="center" controls>
                             <source src="{{ asset($learningObjective->voice) }}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
+                        <br>
                         @foreach($sentences as $sentence)
                             <label>
                                 <input type="radio" name="option" value="{{ $sentence[0] }}"> {{ $sentence[1] }}

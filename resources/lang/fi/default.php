@@ -38,9 +38,12 @@ return [
 
     'selectPicture' => 'Valitse kuva',
     'selectPictureListening' => 'Valitse kuva, josta kuulet.',
+    'selectSentenceListening' => 'Valitse lause, jonka kuulet.',
 
     'doYouKnow?' => 'Tiedätkö?',
     'completedTheLevel' => 'Täytä taso',
 
     'selectSentence' => 'Valitse oikea lause',
+    'writeTranslation' => 'Kirjoita käännös',
+    'translation' => 'Käännös',
 ];

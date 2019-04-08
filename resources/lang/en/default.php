@@ -38,9 +38,12 @@ return [
 
     'selectPicture' => 'Select a picture of',
     'selectPictureListening' => 'Select a picture of that you hear.',
+    'selectSentenceListening' => 'Select a sentence of that you hear.',
 
     'doYouKnow?' => 'Do you know?',
     'completedTheLevel' => 'Complete the level',
 
     'selectSentence' => 'Select the correct sentence of',
+    'writeTranslation' => 'Write the translation of',
+    'translation' => 'Translation',
 ];

@@ -17,9 +17,9 @@
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p>Write the translation of <code><b>{{ $learningObjective->viena_karelian }}</b></code></p>
+                    <p>@lang('default.writeTranslation') <code><b>{{ $learningObjective->viena_karelian }}</b></code></p>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="writing" placeholder="Translation" required autofocus>
+                        <input type="text" class="form-control" id="writing" placeholder="@lang('default.translation')" required autofocus>
                     </div>
                     <input type="submit" class="btn btn-primary btn-user btn-block" value="@lang('default.check')" onclick="checkAnswer()">
                 </div>
