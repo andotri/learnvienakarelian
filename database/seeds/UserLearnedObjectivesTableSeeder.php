@@ -32,7 +32,7 @@ class UserLearnedObjectivesTableSeeder extends Seeder
     }
 
     private function create($user_id, $learning_objective_id, $topic_name, $level, $reading, $listening, $writing) {
-        $created_at = $this->rand_date('2019-03-06', '2019-04-06');
+        $created_at = $this->rand_date('2019-04-01', '2019-04-09');
 
         \App\UserLearnedObjective::create([
             'user_id' => $user_id,

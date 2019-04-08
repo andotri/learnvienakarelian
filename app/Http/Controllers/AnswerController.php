@@ -16,16 +16,26 @@ class AnswerController extends Controller
         $userLearnedObjective = UserLearnedObjective::where('id', $id)->first();
         if($type === 'reading') {
             $userLearnedObjective->reading = $answer;
+            $userLearnedObjective->save();
+
+            return back();
         }
         else if($type === 'listening') {
             $userLearnedObjective->listening = $answer;
+            $userLearnedObjective->save();
+
+            return back();
         }
         else if($type === 'writing') {
             $userLearnedObjective->writing = $answer;
+            $userLearnedObjective->save();
+
+            return view('notification', [
+                'type' => 'success',
+                'message' => 'Congratulations!. You have completed reading, listening, and writing skills in this level.',
+            ]);
         }
 
-        $userLearnedObjective->save();
 
-        return back();
     }
 }
