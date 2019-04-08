@@ -22,6 +22,7 @@ class CreateLearningObjectivesTable extends Migration
             $table->string('finnish');
             $table->string('viena_karelian');
             $table->string('picture')->nullable();
+            $table->string('voice')->nullable();
 
             $table->timestamps();
         });
