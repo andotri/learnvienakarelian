@@ -46,7 +46,29 @@ class PlayController extends Controller
                 ]);
             }
             else {
-                echo "reading medium and hard";
+                $learningObjective = $userLearnedObjective->learningObjective()->first();
+                $word = $learningObjective->viena_karelian;
+                $learnedObjectiveId = $learningObjective->id;
+
+                $otherLearningObjectives = LearningObjective::
+                where('level', $userLearnedObjective->level)->
+                where('id', '!=', $learnedObjectiveId)->
+                inRandomOrder()->take(3)->get();
+
+                $sentences[] = [$learningObjective->id, $learningObjective->english];
+                foreach ($otherLearningObjectives as $otherLearningObjective) {
+                    $sentences[] = [$otherLearningObjective->id, $otherLearningObjective->english];
+                }
+
+                shuffle($sentences);
+
+                return view('play.reading', [
+                    'topic_name' => $topic_name,
+                    'word' => $word,
+                    'sentences' => $sentences,
+                    'learningObjective' => $learningObjective,
+                    'userLearnedObjective' => $userLearnedObjective,
+                ]);
             }
         }
         else if(is_null($userLearnedObjective->listening) || !$userLearnedObjective->listening) {

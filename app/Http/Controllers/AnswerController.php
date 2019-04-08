@@ -35,7 +35,5 @@ class AnswerController extends Controller
                 'message' => 'Congratulations!. You have completed reading, listening, and writing skills in this level.',
             ]);
         }
-
-
     }
 }
