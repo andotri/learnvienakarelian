@@ -20,8 +20,7 @@
                     <p>Select a sentence that you hear <code>{{ $word }}</code></p>
                     <div class="form-group">
                         <audio class="center" controls>
-                        <!-- <source src="{{ asset('voices/' . $learningObjective->id . '.mp3') }}" type="audio/mpeg"> -->
-                            <source src="{{ asset('voices/1.mp3') }}" type="audio/mpeg">
+                            <source src="{{ asset('voices/' . $learningObjective->level . '/' . $learningObjective->id . '.mp3') }}" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                         @foreach($sentences as $sentence)
