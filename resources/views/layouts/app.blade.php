@@ -15,7 +15,7 @@
 
                     @if(Request::is('home'))
                         <div class="d-sm-inline-block">
-                            <img src="{{ asset('images/logo-only.png') }}" id="logo-only">
+                            <img src="{{ asset('images/logo-image.png') }}" id="logo-image">
                         </div>
                         &nbsp;
                         <div class="d-sm-inline-block">
