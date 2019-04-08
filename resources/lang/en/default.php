@@ -24,7 +24,7 @@ return [
 
     'notification' => 'Notification',
     'completedAllLevels' => 'You have completed all levels in this topic.',
-    'completedAllSkills' => 'Congratulations!. You have completed reading, listening, and writing skills at this level.',
+    'completedAllSkills' => 'Congratulations! You have completed reading, listening, and writing skills at this level.',
 
     'food_and_drink' => 'Food and Drink',
     'clothing' => 'Clothing',
