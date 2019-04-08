@@ -17,6 +17,19 @@
                     <div class="alert alert-{{ $type }}" role="alert">
                         {{ $message }}
                     </div>
+                    @isset($description)
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Do you know?</h6>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                {{ $description }}
+                            </p>
+                            <a href="{{ URL::to('/') }}" class="btn btn-success btn-user btn-block">
+                                Completed the level
+                            </a>
+                        </div>
+                    @endisset
                 </div>
             </div>
 

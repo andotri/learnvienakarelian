@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\CulturalInformation;
 use App\LearningObjective;
 use App\UserLearnedObjective;
 use Illuminate\Http\Request;
@@ -30,10 +31,13 @@ class AnswerController extends Controller
             $userLearnedObjective->writing = $answer;
             $userLearnedObjective->save();
 
+            $culturalInformation = CulturalInformation::inRandomOrder()->first();
+
             if($answer) {
                 return view('notification', [
                     'type' => 'success',
                     'message' => 'Congratulations!. You have completed reading, listening, and writing skills in this level.',
+                    'description' => $culturalInformation->english,
                 ]);
             }
             else {
