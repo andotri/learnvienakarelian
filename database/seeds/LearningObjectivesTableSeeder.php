@@ -59,16 +59,16 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('food_and_drink','medium','You eat porridge','Sinä syöt puuroa','Šie šyöt huttuo',null,'voices/medium/2.mp3');
         $this->create('food_and_drink','medium','I drink coffee','Minä juon kahvia','Mie juon kahvie',null,'voices/medium/3.mp3');
         $this->create('food_and_drink','medium','You drink tea','Sinä juot teetä','Šie juot čäijyö',null,'voices/medium/4.mp3');
-        $this->create('food_and_drink','medium','He/she eat soup','Hän syö keittoa','Hiän šyöy keittuo',null,'voices/medium/5.mp3');
+        $this->create('food_and_drink','medium','He eat soup','Hän syö keittoa','Hiän šyöy keittuo',null,'voices/medium/5.mp3');
         $this->create('food_and_drink','medium','We eat bread','Me syömme leipää','Myö šyömmä leipyä',null,'voices/medium/6.mp3');
         $this->create('food_and_drink','medium','You eat rice','Te syötte riisiä','Työ šyöttä riissuo',null,'voices/medium/7.mp3');
         $this->create('food_and_drink','medium','They eat fish','He syövät kalaa','Hyö šyyvväh kalua',null,'voices/medium/8.mp3');
         $this->create('food_and_drink','medium','I drink milk','Minä juon maitoa','Mie juon maituo',null,'voices/medium/9.mp3');
-        $this->create('food_and_drink','medium','He/she drink juice','Hän juo mehua','Hiän juou mehuo',null,'voices/medium/10.mp3');
+        $this->create('food_and_drink','medium','He drink juice','Hän juo mehua','Hiän juou mehuo',null,'voices/medium/10.mp3');
 
         $this->create('clothing','medium','I\'m wearing shoes','Minulla on kengät jalassa','Miula on kenkät jalašša',null,'voices/medium/11.mp3');
         $this->create('clothing','medium','You have white gloves','Sinulla on valkoiset sormikkaat','Šiula on valkiet šormikkahat',null,'voices/medium/12.mp3');
-        $this->create('clothing','medium','He/she has black throusers','Hänellä on mustat housut','Hänellä on muššat pukšut',null,'voices/medium/13.mp3');
+        $this->create('clothing','medium','He has black throusers','Hänellä on mustat housut','Hänellä on muššat pukšut',null,'voices/medium/13.mp3');
         $this->create('clothing','medium','We have colored mittens ','Meillä on kirjavat rukkaset','Meilä on kirjavat kintahat',null,'voices/medium/14.mp3');
         $this->create('clothing','medium','You have warm clothes','Teillä on lämpimät vaatteet','Teilä on lämpimät vuattiet',null,'voices/medium/15.mp3');
         $this->create('clothing','medium','They have beatiful dresses','Heillä on kauniit mekot','Heilä on kaunehet mekot',null,'voices/medium/16.mp3');
@@ -102,7 +102,7 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('season','medium','It is not raining','Ei sada','Ei vihmu',null,'voices/medium/42.mp3');
         $this->create('season','medium','Sun is shining','Aurinko paistaa','Päiväni paistau',null,'voices/medium/43.mp3');
 
-        $this->create('body','medium','He/she is wearing black trousers','Hänellä on mustat housut jalassa','Hänellä on muššat pukšut jalašša',null,'voices/medium/44.mp3');
+        $this->create('body','medium','He is wearing black trousers','Hänellä on mustat housut jalassa','Hänellä on muššat pukšut jalašša',null,'voices/medium/44.mp3');
         $this->create('body','medium','My ear hurts a lot','Minun korvaan sattuu kovasti','Miula korvua kivistäy lujah',null,'voices/medium/45.mp3');
         $this->create('body','medium','Child has a small nose','Lapsella on pieni nenä','Lapšella on pieni no´kka',null,'voices/medium/46.mp3');
         $this->create('body','medium','Mother has red lips','Äidillä on punaiset huulet','Muamolla on ruškiet huulet',null,'voices/medium/47.mp3');
@@ -117,14 +117,14 @@ class LearningObjectivesTableSeeder extends Seeder
 
         $this->create('food_and_drink','hard','I do not eat curd','Minä en syö rahkaa','Mie en šyö rahkua',null,'voices/hard/1.mp3');
         $this->create('food_and_drink','hard','You do not eat porridge','Sinä et syö puuroa','Šie et šyö huttuo',null,'voices/hard/2.mp3');
-        $this->create('food_and_drink','hard','He/she does not drink coffee','Hän ei juo kahvia','Hiän ei juo kahvie',null,'voices/hard/3.mp3');
+        $this->create('food_and_drink','hard','He does not drink coffee','Hän ei juo kahvia','Hiän ei juo kahvie',null,'voices/hard/3.mp3');
         $this->create('food_and_drink','hard','Do you drink milk or water?','Juotko sinä maitoa vai vettä?','Juotko šie maituo vain vettä?',null,'voices/hard/4.mp3');
         $this->create('food_and_drink','hard','We do not eat soup','Me emme syö keittoa','Me emme syö keittoa',null,'voices/hard/5.mp3');
         $this->create('food_and_drink','hard','We do not eat bread','Me emme syö leipää','Työ että šyö leipyä',null,'voices/hard/6.mp3');
         $this->create('food_and_drink','hard','How much does salmon cost?','Paljonko lohi maksaa?','Äijänkö lohi makšau?',null,'voices/hard/7.mp3');
         $this->create('food_and_drink','hard','They do not eat meat','He eivät syö lihaa','Hyö ei šyö lihua',null,'voices/hard/8.mp3');
         $this->create('food_and_drink','hard','I do not eat apple','Minä en syö omenaa','Mie en syö omenua',null,'voices/hard/9.mp3');
-        $this->create('food_and_drink','hard','He/she eat potatos with salad','Hän syö perunaa salaatin kanssa','Hiän šyöy potakkua salatin kera',null,'voices/hard/10.mp3');
+        $this->create('food_and_drink','hard','He eat potatoes with salad','Hän syö perunaa salaatin kanssa','Hiän šyöy potakkua salatin kera',null,'voices/hard/10.mp3');
         $this->create('food_and_drink','hard','I cook rice and fry fish','Minä keitän riisiä ja paistan kalaa','Mie keitän riissuo ta paissan kalua',null,'voices/hard/11.mp3');
         $this->create('food_and_drink','hard','What food you buy today?','Mitä ruokaa sinä ostat tänä päivänä?','Mitä ruokua šie oššat tänäpiänä?',null,'voices/hard/12.mp3');
 
@@ -136,7 +136,7 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('clothing','hard','What you will buy from cloth store?','Mitä sinä ostat vaatekaupasta?','Mitä oššat on vuatekaupašta?',null,'voices/hard/18.mp3');
         $this->create('clothing','hard','What winter clothes do you need?','Mitä talvivaatteita sinä tarvitset?','Mitä talvivuatteita šie tarvičet?',null,'voices/hard/19.mp3');
         $this->create('clothing','hard','She will wear grey dress','Hän laittaa harmaan mekon päälle','Hiän panou harmuan mekon piällä',null,'voices/hard/20.mp3');
-        $this->create('clothing','hard','He/she washes that scarf ','Hän pesee tuon huivin','Hiän pešöy tuon paikan',null,'voices/hard/21.mp3');
+        $this->create('clothing','hard','He washes that scarf ','Hän pesee tuon huivin','Hiän pešöy tuon paikan',null,'voices/hard/21.mp3');
         $this->create('clothing','hard','We buy a new wardrobe','Me ostamme uuden vaatekaapin','Myö oššamma uuvven vuateškuapin',null,'voices/hard/22.mp3');
         $this->create('clothing','hard','Your dress is more expensive than this','Siun mekko on kalliimpi kuin tämä','Šiun mekko on kallehempi kuin tämä',null,'voices/hard/23.mp3');
         $this->create('clothing','hard','My trousers are much thicker than those','Minun housut ovat paljon paksummat kuin nuo','Miun pukšut ollah äijyä pakšummat mitä nuo',null,'voices/hard/24.mp3');
