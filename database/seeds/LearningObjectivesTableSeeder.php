@@ -79,7 +79,7 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('clothing','medium','Our shoes are dirty','Meidän kengät ovat likaiset','Teijän kenkät ollah likaset',null,'voices/medium/21.mp3');
         $this->create('clothing','medium','Their clothes are long','Heidän vaatteet ovat pitkät','Heijän vuattiet ollah pität',null,'voices/medium/22.mp3');
 
-        $this->create('furniture','medium','The chair is crey','Tuoli on harmaa','Stuula on harmua',null,'voices/medium/23.mp3');
+        $this->create('furniture','medium','The chair is grey','Tuoli on harmaa','Stuula on harmua',null,'voices/medium/23.mp3');
         $this->create('furniture','medium','A dress is in a wardrobe','Mekko on vaatekaapissa','Mekko on vuateškuapissa',null,'voices/medium/24.mp3');
         $this->create('furniture','medium','A sofa is in the living room','Sohva on olohuoneessa','Tivana on olohuonehešša',null,'voices/medium/25.mp3');
         $this->create('furniture','medium','A table is green','Pöytä on vihreä','Stola on vihrie',null,'voices/medium/26.mp3');
@@ -106,8 +106,8 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('body','medium','My ear hurts a lot','Minun korvaan sattuu kovasti','Miula korvua kivistäy lujah',null,'voices/medium/45.mp3');
         $this->create('body','medium','Child has a small nose','Lapsella on pieni nenä','Lapšella on pieni no´kka',null,'voices/medium/46.mp3');
         $this->create('body','medium','Mother has red lips','Äidillä on punaiset huulet','Muamolla on ruškiet huulet',null,'voices/medium/47.mp3');
-        $this->create('body','medium','Man has a crey beard','Miehellä on harmaa parta','Miehellä on harmua parta',null,'voices/medium/48.mp3');
-        $this->create('body','medium','Grandfather has crey mustache','Isoisällä on harmaat viikset','Ukolla on harmuat viikšet',null,'voices/medium/49.mp3');
+        $this->create('body','medium','Man has a grey beard','Miehellä on harmaa parta','Miehellä on harmua parta',null,'voices/medium/48.mp3');
+        $this->create('body','medium','Grandfather has grey mustache','Isoisällä on harmaat viikset','Ukolla on harmuat viikšet',null,'voices/medium/49.mp3');
         $this->create('body','medium','You have beatiful blue eyes','Sinulla on kauniit siniset silmät','Šiula on kaunehet šiniset šilmät',null,'voices/medium/50.mp3');
         $this->create('body','medium','Mittens are in hands','Rukkaset ovat kädessä','Kintahat ollah kiäššä',null,'voices/medium/51.mp3');
         $this->create('body','medium','I have a sweater on','Minulla on villapaita päällä','Miula on villapaita piällä',null,'voices/medium/52.mp3');
@@ -178,7 +178,7 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('body','hard','I put white shirt on','Laitoin valkoisen paidan päälle','Panin piällä valkien paijan',null,'voices/hard/57.mp3');
         $this->create('body','hard','I will put black shoes on the leg','Jalkaan laitan mustat kengät','Jalkah panen muššat kenkät',null,'voices/hard/58.mp3');
         $this->create('body','hard','What kind of shirt do you have on','Minkälainen paita sinulla on päällä','Mimmoni paita šiula on piällä?',null,'voices/hard/59.mp3');
-        $this->create('body','hard','Grandmother has a short crey hair','Isoäidillä on lyhyet harmaat hiukset','Ämmöllä on lyhyöt harmuat tukat?',null,'voices/hard/60.mp3');
+        $this->create('body','hard','Grandmother has a short grey hair','Isoäidillä on lyhyet harmaat hiukset','Ämmöllä on lyhyöt harmuat tukat?',null,'voices/hard/60.mp3');
     }
 
     private function create($topic_name, $level, $english, $finnish, $viena_karelian, $picture, $voice) {
