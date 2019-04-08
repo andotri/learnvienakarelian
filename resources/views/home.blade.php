@@ -89,7 +89,7 @@
                     </a>
                     -->
                     <a href="{{ URL::to('/') }}/play/body">
-                        <p class="p-3 bg-gray-100 m-0">
+                        <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-child"></i>
                             </span>
