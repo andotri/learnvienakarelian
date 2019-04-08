@@ -29,6 +29,7 @@ class PlayController extends Controller
                 $otherLearningObjectives = LearningObjective::
                 where('level', $userLearnedObjective->level)->
                 where('id', '!=', $learnedObjectiveId)->
+                where('topic_name', $topic_name)->
                 inRandomOrder()->take(3)->get();
 
                 $images[] = [$learningObjective->id, $learningObjective->picture];
@@ -54,6 +55,7 @@ class PlayController extends Controller
                 $otherLearningObjectives = LearningObjective::
                 where('level', $userLearnedObjective->level)->
                 where('id', '!=', $learnedObjectiveId)->
+                where('topic_name', $topic_name)->
                 inRandomOrder()->take(3)->get();
 
                 if(Session::get('locale') === 'en') {
@@ -93,6 +95,7 @@ class PlayController extends Controller
                 $otherLearningObjectives = LearningObjective::
                 where('level', $userLearnedObjective->level)->
                 where('id', '!=', $learnedObjectiveId)->
+                where('topic_name', $topic_name)->
                 inRandomOrder()->take(3)->get();
 
                 $images[] = [$learningObjective->id, $learningObjective->picture];
@@ -118,6 +121,7 @@ class PlayController extends Controller
                 $otherLearningObjectives = LearningObjective::
                 where('level', $userLearnedObjective->level)->
                 where('id', '!=', $learnedObjectiveId)->
+                where('topic_name', $topic_name)->
                 inRandomOrder()->take(3)->get();
 
                 $learningObjectiveSentence =  $learningObjective->viena_karelian;
