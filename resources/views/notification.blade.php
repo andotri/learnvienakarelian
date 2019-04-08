@@ -11,7 +11,7 @@
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Notification</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">@lang('default.notification')</h6>
                 </div>
                 <div class="card-body">
                     <div class="alert alert-{{ $type }}" role="alert">
@@ -19,7 +19,7 @@
                     </div>
                     @isset($description)
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Do you know?</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">@lang('default.doYouKnow?')</h6>
                         </div>
                         <div class="card-body">
                             <div class="text-center">
@@ -30,7 +30,7 @@
                                 </p>
                             </div>
                             <a href="{{ URL::to('/') }}" class="btn btn-success btn-user btn-block">
-                                Completed the level
+                                @lang('default.completedTheLevel')
                             </a>
                         </div>
                     @endisset

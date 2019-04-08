@@ -43,5 +43,5 @@ Route::group(['middleware' => ['auth', 'lang']], function() {
 });
 
 Route::get('feedback', function () {
-    return redirect('https://triando.typeform.com/to/ubYyq8');
+    return redirect('https://forms.gle/o8JuCdXWwFerueMy7');
 });

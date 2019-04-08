@@ -12,7 +12,6 @@
         <br><br>This includes:
         <br>- Play as an anonymous
         <br>- Delete your account
-        <br>- Contact us with a feedback form
     </p>
     <hr>
     <form class="user" method="GET" action="/">

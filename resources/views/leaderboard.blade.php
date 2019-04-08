@@ -11,16 +11,16 @@
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Leaderboard</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">@lang('default.leaderboard')</h6>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Weekly Score</th>
-                            <th scope="col">Total Score</th>
+                            <th scope="col">@lang('default.name')</th>
+                            <th scope="col">@lang('default.weeklyScore')</th>
+                            <th scope="col">@lang('default.totalScore')</th>
                         </tr>
                         </thead>
                         <tbody>

@@ -89,18 +89,18 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('furniture','medium','This is a wide table','Tämä on leveä pöytä','Tämä on levie stola',null,'voices/medium/30.mp3');
         $this->create('furniture','medium','Kitchen is small','Keittiö on pieni','Keittijö on pieni',null,'voices/medium/31.mp3');
 
-        $this->create('weather','medium','Spring is coming','Kevät on tulossa','Kevät tulou',null,'voices/medium/32.mp3');
-        $this->create('weather','medium','Snow smelts in the spring','Keväällä lumi sulaa','Kevyällä lumi šulau',null,'voices/medium/33.mp3');
-        $this->create('weather','medium','Autumn is coming','Syksy saapuu','Šykyšy tulou',null,'voices/medium/34.mp3');
-        $this->create('weather','medium','It is snowing a lot in the winter','Talvella sataa paljon lunta','Talvella šatau äijän lunta',null,'voices/medium/35.mp3');
-        $this->create('weather','medium','It is warm in the summer','Kesällä on lämmin','Kešällä on lämmin',null,'voices/medium/36.mp3');
-        $this->create('weather','medium','It is very windy in the autumn','Syksyllä tuulee kovasti','Šykyšyllä tuulou lujah',null,'voices/medium/37.mp3');
-        $this->create('weather','medium','It is dark in the winter','Talvella on pimeä','Talvella on pimie',null,'voices/medium/38.mp3');
-        $this->create('weather','medium','It is raining a lot in the autumn','Syksyllä sataa paljon','Šykyšyllä šatau äijän',null,'voices/medium/39.mp3');
-        $this->create('weather','medium','It is hot weather in July','Heinäkuussa on kuuma sää','Heinäkuušša on kuuma šiä',null,'voices/medium/40.mp3');
-        $this->create('weather','medium','It was rainy and hard wind yesterday','Eilen oli sadetta ja kova tuuli','Eklein oli vihma ta luja tuuli',null,'voices/medium/41.mp3');
-        $this->create('weather','medium','It is not raining','Ei sada','Ei vihmu',null,'voices/medium/42.mp3');
-        $this->create('weather','medium','Sun is shining','Aurinko paistaa','Päiväni paistau',null,'voices/medium/43.mp3');
+        $this->create('season','medium','Spring is coming','Kevät on tulossa','Kevät tulou',null,'voices/medium/32.mp3');
+        $this->create('season','medium','Snow smelts in the spring','Keväällä lumi sulaa','Kevyällä lumi šulau',null,'voices/medium/33.mp3');
+        $this->create('season','medium','Autumn is coming','Syksy saapuu','Šykyšy tulou',null,'voices/medium/34.mp3');
+        $this->create('season','medium','It is snowing a lot in the winter','Talvella sataa paljon lunta','Talvella šatau äijän lunta',null,'voices/medium/35.mp3');
+        $this->create('season','medium','It is warm in the summer','Kesällä on lämmin','Kešällä on lämmin',null,'voices/medium/36.mp3');
+        $this->create('season','medium','It is very windy in the autumn','Syksyllä tuulee kovasti','Šykyšyllä tuulou lujah',null,'voices/medium/37.mp3');
+        $this->create('season','medium','It is dark in the winter','Talvella on pimeä','Talvella on pimie',null,'voices/medium/38.mp3');
+        $this->create('season','medium','It is raining a lot in the autumn','Syksyllä sataa paljon','Šykyšyllä šatau äijän',null,'voices/medium/39.mp3');
+        $this->create('season','medium','It is hot weather in July','Heinäkuussa on kuuma sää','Heinäkuušša on kuuma šiä',null,'voices/medium/40.mp3');
+        $this->create('season','medium','It was rainy and hard wind yesterday','Eilen oli sadetta ja kova tuuli','Eklein oli vihma ta luja tuuli',null,'voices/medium/41.mp3');
+        $this->create('season','medium','It is not raining','Ei sada','Ei vihmu',null,'voices/medium/42.mp3');
+        $this->create('season','medium','Sun is shining','Aurinko paistaa','Päiväni paistau',null,'voices/medium/43.mp3');
 
         $this->create('body','medium','He/she is wearing black trousers','Hänellä on mustat housut jalassa','Hänellä on muššat pukšut jalašša',null,'voices/medium/44.mp3');
         $this->create('body','medium','My ear hurts a lot','Minun korvaan sattuu kovasti','Miula korvua kivistäy lujah',null,'voices/medium/45.mp3');
@@ -154,18 +154,18 @@ class LearningObjectivesTableSeeder extends Seeder
         $this->create('furniture','hard','We have a big coloured carpet','Meillä on iso kirjava matto','Meilä on šuuri kirjava matto?',null,'voices/hard/35.mp3');
         $this->create('furniture','hard','A table is opposite the window','Ikkunan vastapäätä on pöytä','Ikkunan vaštapiätä on stola',null,'voices/hard/36.mp3');
 
-        $this->create('weather','hard','March is a start of Spring','Maaliskuu on kevään alku','Kevätkuu on kevyen alku',null,'voices/hard/37.mp3');
-        $this->create('weather','hard','It is needed to put headwear on in the winter ','Talvella pitää laittaa lakki päähän','Talvella pitäy panna lakki piäh',null,'voices/hard/38.mp3');
-        $this->create('weather','hard','Put mittens in your hands!','Laita rukkaset käteen!','Pane kintahat käteh!',null,'voices/hard/39.mp3');
-        $this->create('weather','hard','In this winter I knit woolen stockings','Tänä talvena minä kudon sukat','Tänä talvena mie tikutan šukat',null,'voices/hard/40.mp3');
-        $this->create('weather','hard','My grandmother knits a warm woolen sweater','Minun isoäiti kutoo lämpimän villapaidan','Miun ämmö tikuttau lämpimän villapaijan',null,'voices/hard/41.mp3');
-        $this->create('weather','hard','I do not wear winter clothes on','En laita talvivaatteita päälle','En pane talvivuatteita piälle',null,'voices/hard/42.mp3');
-        $this->create('weather','hard','Do not close the window','Älä laita ikkunaa kiinni ','Elä pane ikkunua kiini',null,'voices/hard/43.mp3');
-        $this->create('weather','hard','It is thunder and lightning','Salamat lyö ja ukkonen jyrisee','Tulta isköy ta ukkoni jyräjäy',null,'voices/hard/44.mp3');
-        $this->create('weather','hard','It is long winter in Karelia','Karjalassa on pitkä talvi','Karjalašša on pitkä talvi',null,'voices/hard/45.mp3');
-        $this->create('weather','hard','Day is short and night is long in the winter','Talvella päivä on lyhyt ja yö on pitkä','Talvella päivä on lyhyt ta yö on pitkä',null,'voices/hard/46.mp3');
-        $this->create('weather','hard','Summer is warm season','Kesä on lämmin vuodenaika','Kešä on lämmin vuuvvenaika',null,'voices/hard/47.mp3');
-        $this->create('weather','hard','It snows a lot and it is dark in the winter','Talvella sataa paljon lunta ja on pimeää','Talvella šatau äijän lunta ta on pimie',null,'voices/hard/48.mp3');
+        $this->create('season','hard','March is a start of Spring','Maaliskuu on kevään alku','Kevätkuu on kevyen alku',null,'voices/hard/37.mp3');
+        $this->create('season','hard','It is needed to put headwear on in the winter ','Talvella pitää laittaa lakki päähän','Talvella pitäy panna lakki piäh',null,'voices/hard/38.mp3');
+        $this->create('season','hard','Put mittens in your hands!','Laita rukkaset käteen!','Pane kintahat käteh!',null,'voices/hard/39.mp3');
+        $this->create('season','hard','In this winter I knit woolen stockings','Tänä talvena minä kudon sukat','Tänä talvena mie tikutan šukat',null,'voices/hard/40.mp3');
+        $this->create('season','hard','My grandmother knits a warm woolen sweater','Minun isoäiti kutoo lämpimän villapaidan','Miun ämmö tikuttau lämpimän villapaijan',null,'voices/hard/41.mp3');
+        $this->create('season','hard','I do not wear winter clothes on','En laita talvivaatteita päälle','En pane talvivuatteita piälle',null,'voices/hard/42.mp3');
+        $this->create('season','hard','Do not close the window','Älä laita ikkunaa kiinni ','Elä pane ikkunua kiini',null,'voices/hard/43.mp3');
+        $this->create('season','hard','It is thunder and lightning','Salamat lyö ja ukkonen jyrisee','Tulta isköy ta ukkoni jyräjäy',null,'voices/hard/44.mp3');
+        $this->create('season','hard','It is long winter in Karelia','Karjalassa on pitkä talvi','Karjalašša on pitkä talvi',null,'voices/hard/45.mp3');
+        $this->create('season','hard','Day is short and night is long in the winter','Talvella päivä on lyhyt ja yö on pitkä','Talvella päivä on lyhyt ta yö on pitkä',null,'voices/hard/46.mp3');
+        $this->create('season','hard','Summer is warm season','Kesä on lämmin vuodenaika','Kešä on lämmin vuuvvenaika',null,'voices/hard/47.mp3');
+        $this->create('season','hard','It snows a lot and it is dark in the winter','Talvella sataa paljon lunta ja on pimeää','Talvella šatau äijän lunta ta on pimie',null,'voices/hard/48.mp3');
 
         $this->create('body','hard','She is wearing an expensive dress','Hänellä on kallis mekko päällä','Hänellä on kallis mekko piällä',null,'voices/hard/49.mp3');
         $this->create('body','hard','I am wearing yellow shirt','Minulla on keltainen paita päällä','Miula on keltani paita piällä',null,'voices/hard/50.mp3');

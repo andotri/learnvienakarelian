@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                     </div>
-                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Check" onclick="checkAnswer()">
+                    <input type="submit" class="btn btn-primary btn-user btn-block" value="@lang('default.check')" onclick="checkAnswer()">
                 </div>
             </div>
 
@@ -43,11 +43,11 @@
         function checkAnswer() {
             var answer = '{{ $learningObjective->id }}';
             if($("input[name=option]:checked").val() == answer) {
-                alert("Correct");
+                alert("@lang('default.correct')");
                 window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=listening&answer=true";
             }
             else {
-                alert("Wrong");
+                alert("@lang('default.wrong')");
                 window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=listening&answer=false";
             }
         }

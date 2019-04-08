@@ -21,7 +21,7 @@
                     <div class="form-group">
                         <input type="text" class="form-control" id="writing" placeholder="Translation" required autofocus>
                     </div>
-                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Check" onclick="checkAnswer()">
+                    <input type="submit" class="btn btn-primary btn-user btn-block" value="@lang('default.check')" onclick="checkAnswer()">
                 </div>
             </div>
 
@@ -31,13 +31,17 @@
 
     <script>
         function checkAnswer() {
-            var answer = '{{ $learningObjective->english }}';
+            @if(Session::get('locale') === 'en')
+                var answer = '{{ $learningObjective->english }}';
+            @else
+                var answer = '{{ $learningObjective->finnish }}';
+            @endif
             if($('#writing').val().toUpperCase() == answer.toUpperCase()) {
-                alert("Correct");
+                alert("@lang('default.correct')");
                 window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=writing&answer=true";
             }
             else {
-                alert("Wrong");
+                alert("@lang('default.wrong')");
                 window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=writing&answer=false";
             }
         }

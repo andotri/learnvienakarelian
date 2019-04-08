@@ -6,6 +6,7 @@ use App\LearningObjective;
 use App\UserLearnedObjective;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Session;
 
 class PlayController extends Controller
 {
@@ -38,7 +39,7 @@ class PlayController extends Controller
                 shuffle($images);
 
                 return view('play.reading-easy', [
-                    'topic_name' => $topic_name,
+                    'topic_name' => trans('default.' . $topic_name),
                     'word' => $word,
                     'images' => $images,
                     'learningObjective' => $learningObjective,
@@ -55,15 +56,27 @@ class PlayController extends Controller
                 where('id', '!=', $learnedObjectiveId)->
                 inRandomOrder()->take(3)->get();
 
-                $sentences[] = [$learningObjective->id, $learningObjective->english];
+                if(Session::get('locale') === 'en') {
+                    $learningObjectiveSentence =  $learningObjective->english;
+                }
+                else {
+                    $learningObjectiveSentence = $learningObjective->finnish;
+                }
+
+                $sentences[] = [$learningObjective->id, $learningObjectiveSentence];
                 foreach ($otherLearningObjectives as $otherLearningObjective) {
-                    $sentences[] = [$otherLearningObjective->id, $otherLearningObjective->english];
+                    if(Session::get('locale') === 'en') {
+                        $sentences[] = [$otherLearningObjective->id, $otherLearningObjective->english];
+                    }
+                    else {
+                        $sentences[] = [$otherLearningObjective->id, $otherLearningObjective->finnish];
+                    }
                 }
 
                 shuffle($sentences);
 
                 return view('play.reading', [
-                    'topic_name' => $topic_name,
+                    'topic_name' =>  trans('default.' . $topic_name),
                     'word' => $word,
                     'sentences' => $sentences,
                     'learningObjective' => $learningObjective,
@@ -90,7 +103,7 @@ class PlayController extends Controller
                 shuffle($images);
 
                 return view('play.listening-easy', [
-                    'topic_name' => $topic_name,
+                    'topic_name' =>  trans('default.' . $topic_name),
                     'word' => $word,
                     'images' => $images,
                     'learningObjective' => $learningObjective,
@@ -107,15 +120,17 @@ class PlayController extends Controller
                 where('id', '!=', $learnedObjectiveId)->
                 inRandomOrder()->take(3)->get();
 
-                $sentences[] = [$learningObjective->id, $learningObjective->english];
+                $learningObjectiveSentence =  $learningObjective->viena_karelian;
+
+                $sentences[] = [$learningObjective->id, $learningObjectiveSentence];
                 foreach ($otherLearningObjectives as $otherLearningObjective) {
-                    $sentences[] = [$otherLearningObjective->id, $otherLearningObjective->english];
+                    $sentences[] = [$otherLearningObjective->id, $otherLearningObjective->viena_karelian];
                 }
 
                 shuffle($sentences);
 
                 return view('play.listening', [
-                    'topic_name' => $topic_name,
+                    'topic_name' =>  trans('default.' . $topic_name),
                     'word' => $word,
                     'sentences' => $sentences,
                     'learningObjective' => $learningObjective,
@@ -128,7 +143,7 @@ class PlayController extends Controller
             $word = $learningObjective->viena_karelian;
 
             return view('play.writing', [
-                'topic_name' => $topic_name,
+                'topic_name' =>  trans('default.' . $topic_name),
                 'word' => $word,
                 'learningObjective' => $learningObjective,
                 'userLearnedObjective' => $userLearnedObjective,
@@ -137,7 +152,7 @@ class PlayController extends Controller
         else {
             return view('notification', [
                 'type' => 'info',
-                'message' => 'You have completed all levels in this topic.',
+                'message' => trans('default.completedAllLevels'),
             ]);
         }
     }

@@ -6,6 +6,7 @@ use App\CulturalInformation;
 use App\LearningObjective;
 use App\UserLearnedObjective;
 use Illuminate\Http\Request;
+use Session;
 
 class AnswerController extends Controller
 {
@@ -33,11 +34,18 @@ class AnswerController extends Controller
 
             $culturalInformation = CulturalInformation::inRandomOrder()->first();
 
+            if(Session::get('locale') === 'en') {
+                $description =  $culturalInformation->english;
+            }
+            else {
+                $description = $culturalInformation->finnish;
+            }
+
             if($answer) {
                 return view('notification', [
                     'type' => 'success',
-                    'message' => 'Congratulations!. You have completed reading, listening, and writing skills in this level.',
-                    'description' => $culturalInformation->english,
+                    'message' => trans('default.completedAllSkills'),
+                    'description' => $description,
                 ]);
             }
             else {

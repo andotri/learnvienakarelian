@@ -12,7 +12,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{ URL::to('/') }}/leaderboard">Weekly Rank and Score</a></div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{ URL::to('/') }}/leaderboard">@lang('default.weeklyRankAndScore')</a></div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $rank }} | {{ Auth::user()->weekly_score }} pts</div>
                         </div>
                         <div class="col mr-2 text-right">
@@ -27,8 +27,8 @@
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary" style="float: left">Select a Topic</h6>
-                    <h6 class="m-0 font-weight-bold text-primary" style="float: right">Achievements</h6>
+                    <h6 class="m-0 font-weight-bold text-primary" style="float: left">@lang('default.selectATopic')</h6>
+                    <h6 class="m-0 font-weight-bold text-primary" style="float: right">@lang('default.achievements')</h6>
                 </div>
                 <div class="card-body">
                     <a href="{{ URL::to('/') }}/play/food_and_drink">
@@ -36,7 +36,7 @@
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-utensils"></i>
                             </span>
-                            Food and Drink
+                            @lang('default.food_and_drink')
                             <span style="float: right;">
                                 {!! $stars[0] !!}
                             </span>
@@ -47,7 +47,7 @@
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-tshirt"></i>
                             </span>
-                            Clothing
+                            @lang('default.clothing')
                             <span style="float: right;">
                                 {!! $stars[1] !!}
                             </span>
@@ -58,7 +58,7 @@
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-chair"></i>
                             </span>
-                            Furniture
+                            @lang('default.furniture')
                             <span style="float: right;">
                                 {!! $stars[2] !!}
                             </span>
@@ -69,7 +69,7 @@
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-cloud-sun"></i>
                             </span>
-                            Season
+                            @lang('default.season')
                             <span style="float: right;">
                                 {!! $stars[3] !!}
                             </span>
@@ -93,7 +93,7 @@
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-child"></i>
                             </span>
-                            Body
+                            @lang('default.body')
                             <span style="float: right;">
                                 {!! $stars[5] !!}
                             </span>
