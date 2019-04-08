@@ -18,9 +18,9 @@
                         <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p>@lang('default.selectPicture') <code>{{ $word }}</code></p>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         @foreach($images as $image)
-                            <img class="pictureOption center" src="{{ asset($image[1]) }}" id="{{ $image[0] }}"  onclick="changeOpacity({{ $image[0] }})">
+                            <img class="picture" src="{{ asset($image[1]) }}" id="{{ $image[0] }}"  onclick="changeOpacity({{ $image[0] }})">
                         @endforeach
                     </div>
                     <input type="submit" class="btn btn-primary btn-user btn-block" value="@lang('default.check')" onclick="checkAnswer()">
@@ -34,7 +34,7 @@
 
     <script>
         function changeOpacity(id) {
-            $('.pictureOption').css('opacity', '0.5');
+            $('.picture').css('opacity', '0.5');
             $('#' + id).css('opacity', '1');
             $('#answer').val(id);
         }
