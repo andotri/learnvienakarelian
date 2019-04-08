@@ -18,21 +18,19 @@
                         {{ $message }}
                     </div>
                     @isset($description)
-                        <div class="card-header py-3">
+                        <div class="card-header py-3 w-50 text-center" style="margin: 0 auto;">
                             <h6 class="m-0 font-weight-bold text-primary">@lang('default.doYouKnow?')</h6>
                         </div>
                         <div class="card-body">
                             <div class="text-center">
                                 <img src="{{ asset('images/cultural_information/kalevala.jpg') }}" id="logo">
                                 <br><br>
-                                <p>
-                                    {{ $description }}
-                                </p>
+                                {{ $description }}
                             </div>
-                            <a href="{{ URL::to('/') }}" class="btn btn-success btn-user btn-block">
-                                @lang('default.completedTheLevel')
-                            </a>
                         </div>
+                        <a href="{{ URL::to('/') }}" class="btn btn-success btn-user btn-block">
+                            @lang('default.completedTheLevel')
+                        </a>
                     @endisset
                 </div>
             </div>

@@ -57,7 +57,7 @@
                 <div class="container my-auto">
                     <div class="text-center">
                         <div class="float-left">
-                            <a class="small" href="{{ URL::to('/') }}/feedback"><i class="fas fa-question-circle"></i> @lang('default.feedback')</a>
+                            <a class="small" href="{{ URL::to('/') }}/feedback" target="_blank"><i class="fas fa-question-circle"></i> @lang('default.feedback')</a>
                         </div>
                         <div class="float-right">
                             <span class="small">&copy; {{ config('app.name') }}</span>

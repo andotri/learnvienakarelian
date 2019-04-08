@@ -17,7 +17,7 @@
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p>@lang('default.selectPicture') <code>{{ $word }}</code></p>
+                    <p>@lang('default.selectPicture') <code><b>{{ $word }}</b></code></p>
                     <div class="form-group text-center">
                         @foreach($images as $image)
                             <img class="picture" src="{{ asset($image[1]) }}" id="{{ $image[0] }}"  onclick="changeOpacity({{ $image[0] }})">

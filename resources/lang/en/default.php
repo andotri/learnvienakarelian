@@ -37,7 +37,7 @@ return [
     'wrong' => 'Wrong',
 
     'selectPicture' => 'Select a picture of',
-    'selectPictureListening' => 'Select a picture of that you hear',
+    'selectPictureListening' => 'Select a picture of that you hear.',
 
     'doYouKnow?' => 'Do you know?',
     'completedTheLevel' => 'Complete the level',

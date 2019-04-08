@@ -17,7 +17,7 @@
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p>@lang('default.selectSentence') <code>{{ $word }}</code></p>
+                    <p>@lang('default.selectSentence') <code><b>{{ $word }}</b></code></p>
                     <div class="form-group">
                         @foreach($sentences as $sentence)
                             <label>

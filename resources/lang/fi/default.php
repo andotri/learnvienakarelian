@@ -37,7 +37,7 @@ return [
     'wrong' => 'Väärä',
 
     'selectPicture' => 'Valitse kuva',
-    'selectPictureListening' => 'Valitse kuva, josta kuulet',
+    'selectPictureListening' => 'Valitse kuva, josta kuulet.',
 
     'doYouKnow?' => 'Tiedätkö?',
     'completedTheLevel' => 'Täytä taso',
