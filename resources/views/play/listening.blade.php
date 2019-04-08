@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @extends('layouts.app')
 
-@section('title', 'Reading')
+@section('title', 'Listening')
 
 @section('content')
     <!-- Content Row -->
@@ -17,8 +17,13 @@
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <p>Select the correct sentence of <code>{{ $word }}</code></p>
+                    <p>Select a sentence that you hear <code>{{ $word }}</code></p>
                     <div class="form-group">
+                        <audio class="center" controls>
+                        <!-- <source src="{{ asset('voices/' . $learningObjective->id . '.mp3') }}" type="audio/mpeg"> -->
+                            <source src="{{ asset('voices/1.mp3') }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                         @foreach($sentences as $sentence)
                             <label>
                                 <input type="radio" name="option" value="{{ $sentence[0] }}"> {{ $sentence[1] }}
@@ -40,11 +45,11 @@
             var answer = '{{ $learningObjective->id }}';
             if($("input[name=option]:checked").val() == answer) {
                 alert("Correct");
-                window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=reading&answer=true";
+                window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=listening&answer=true";
             }
             else {
                 alert("Wrong");
-                window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=reading&answer=false";
+                window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=listening&answer=false";
             }
         }
     </script>
