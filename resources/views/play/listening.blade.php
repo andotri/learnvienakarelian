@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-body">
                     <div class="progress mb-4">
-                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p>Select a sentence that you hear <code>{{ $word }}</code></p>
                     <div class="form-group">

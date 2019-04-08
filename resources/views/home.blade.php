@@ -75,6 +75,7 @@
                             </span>
                         </p>
                     </a>
+                    <!--
                     <a href="{{ URL::to('/') }}/play/number">
                         <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
@@ -86,6 +87,7 @@
                             </span>
                         </p>
                     </a>
+                    -->
                     <a href="{{ URL::to('/') }}/play/body">
                         <p class="p-3 bg-gray-100 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
@@ -97,6 +99,7 @@
                             </span>
                         </p>
                     </a>
+                    <!--
                     <a href="{{ URL::to('/') }}/play/days_and_months">
                         <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
@@ -108,6 +111,7 @@
                             </span>
                         </p>
                     </a>
+                    -->
                     <hr>
                     <a href="{{ URL::to('/') }}/cultural-information">
                         <p class="p-3 bg-gray-200 m-0">

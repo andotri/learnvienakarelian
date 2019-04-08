@@ -30,10 +30,15 @@ class AnswerController extends Controller
             $userLearnedObjective->writing = $answer;
             $userLearnedObjective->save();
 
-            return view('notification', [
-                'type' => 'success',
-                'message' => 'Congratulations!. You have completed reading, listening, and writing skills in this level.',
-            ]);
+            if($answer) {
+                return view('notification', [
+                    'type' => 'success',
+                    'message' => 'Congratulations!. You have completed reading, listening, and writing skills in this level.',
+                ]);
+            }
+            else {
+                return back();
+            }
         }
     }
 }
