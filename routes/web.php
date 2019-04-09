@@ -29,8 +29,8 @@ Route::post('register', 'Auth\RegisterController@register');
 Route::group(['middleware' => ['auth', 'lang']], function() {
     Route::get('home', 'HomeController@index');
 
-//    Route::get('feedback', 'FeedbackController@index');
-//    Route::post('feedback/create', 'FeedbackController@create');
+    Route::get('help', 'HelpController@index');
+    Route::post('help/create', 'HelpController@create');
 
     Route::get('profile', 'ProfileController@index');
     Route::post('profile/update', 'ProfileController@update');

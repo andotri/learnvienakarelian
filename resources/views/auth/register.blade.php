@@ -5,11 +5,8 @@
 
 @section('content')
     <p>
-        We provide the dialect and cultural learning of Viena Karelian.
-        Learn from the easiest level with interesting topics,
-        also explore cultural information every day for <b>FREE</b>.
-
-        <br>Join our community now.
+        Play and learn Viena Karelian and culture.
+        You can start from the easiest level with basic topics and learn cultural information daily for <b>FREE</b>.
     </p>
     <hr>
     <form class="user" method="POST" action="{{ route('register') }}">

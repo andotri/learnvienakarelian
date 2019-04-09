@@ -4,17 +4,17 @@ return [
     'weeklyRankAndScore' => 'Viikkosija ja pisteet',
     'selectATopic' => 'Valitse aihe',
     'achievements' => 'Saavutukset',
-    'feedback' => 'Palaute',
+    'help' => 'Auta',
 
     'myProfile' => 'Profiilini',
     'iSpeakEnglish' => 'Puhun englantia',
     'iSpeakFinnish' => 'Puhun suomea',
     'playAsAnAnonymous' => 'Pelaa anonyyminä',
-    'update' => 'Päivittää',
+    'update' => 'Päivittä',
     'deleteMyAccount' => 'Poista minun tilini',
     'deleteConfirmation' => 'Haluatko varmasti poistaa tilin?',
     'namePlaceholder' => 'Nimeni on ...',
-    'success' => 'Menestys!',
+    'success' => 'Muutokset päivitettiin onnistuneesti.',
     'updateMessage' => 'Kiitos päivityksestäsi.',
 
     'leaderboard' => 'Alkuvalikko',
@@ -29,21 +29,26 @@ return [
     'food_and_drink' => 'Ruoka ja juoma',
     'clothing' => 'Vaatetus',
     'furniture' => 'Huonekalut',
-    'season' => 'Kausi',
+    'season' => 'Vuodenajat',
     'body' => 'Ruumiinosat',
 
-    'check' => 'Tarkistaa',
-    'correct' => 'Oikea',
-    'wrong' => 'Väärä',
+    'check' => 'Tarkista',
+    'correct' => 'Oikea vastaus!',
+    'wrong' => 'Väärä vastaus!',
 
     'selectPicture' => 'Valitse kuva',
-    'selectPictureListening' => 'Valitse kuva, josta kuulet.',
+    'selectPictureListening' => 'Valitse kuva, jonka kuulet.',
     'selectSentenceListening' => 'Valitse lause, jonka kuulet.',
 
     'doYouKnow?' => 'Tiedätkö?',
-    'completedTheLevel' => 'Täytä taso',
+    'completedTheLevel' => 'Palaa kotisivulle',
 
     'selectSentence' => 'Valitse oikea lause',
     'writeTranslation' => 'Kirjoita käännös',
     'translation' => 'Käännös',
+
+    'title' => 'Otsikko',
+    'description' => 'Kuvaus',
+    'submit' => 'Lähetä',
+    'messageSuccess' => 'Kiitos viestistäsi.',
 ];

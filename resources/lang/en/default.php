@@ -4,7 +4,7 @@ return [
     'weeklyRankAndScore' => 'Weekly Rank and Score',
     'selectATopic' => 'Select a Topic',
     'achievements' => 'Achievements',
-    'feedback' => 'Feedback',
+    'help' => 'Help',
 
     'myProfile' => 'My Profile',
     'iSpeakEnglish' => 'I speak English',
@@ -14,7 +14,7 @@ return [
     'deleteMyAccount' => 'Delete my account',
     'deleteConfirmation' => 'Are you sure to delete your account?',
     'namePlaceholder' => 'My name is ...',
-    'success' => 'Success!',
+    'success' => 'Changes were updated successfully.',
     'updateMessage' => 'Thanks for your update.',
 
     'leaderboard' => 'Leaderboard',
@@ -29,21 +29,25 @@ return [
     'food_and_drink' => 'Food and Drink',
     'clothing' => 'Clothing',
     'furniture' => 'Furniture',
-    'season' => 'Season',
+    'season' => 'Seasons',
     'body' => 'Body',
 
     'check' => 'Check',
-    'correct' => 'Correct',
-    'wrong' => 'Wrong',
+    'correct' => 'Correct Answer!',
+    'wrong' => 'Wrong Answer!',
 
     'selectPicture' => 'Select a picture of',
     'selectPictureListening' => 'Select a picture of that you hear.',
     'selectSentenceListening' => 'Select a sentence of that you hear.',
 
     'doYouKnow?' => 'Do you know?',
-    'completedTheLevel' => 'Complete the level',
+    'completedTheLevel' => 'Go back to homepage',
 
     'selectSentence' => 'Select the correct sentence of',
     'writeTranslation' => 'Write the translation of',
     'translation' => 'Translation',
+
+    'title' => 'Title',
+    'description' => 'Description',
+    'messageSuccess' => 'Thanks for your message.',
 ];

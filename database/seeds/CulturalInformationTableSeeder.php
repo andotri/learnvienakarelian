@@ -20,7 +20,7 @@ class CulturalInformationTableSeeder extends Seeder
             'Ensimmäinen versio Kalevalasta (nimeltään Vanha Kalevala) ilmestyi vuonna 1835.'
         );
         $this->create(
-            'The Kalevala version most commonly known today was first published in 1849 and consists of 22,795 verses, divided into 50 folk stories.',
+            'The most commonly known version of the Kalevala was published in 1849. It includes 22,795 verses and is divided into 50 folk stories.',
             'Kalevalan tunnetuin versio ilmestyi vuonna 1849 ja se sisältää 22,795 säkeistöä jaettuna 50 kansantarinaan.'
         );
         $this->create(

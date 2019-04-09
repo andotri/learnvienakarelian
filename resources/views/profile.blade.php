@@ -18,8 +18,7 @@
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success">
-                            <strong>@lang('default.success')</strong>
-                            <br>@lang('default.updateMessage')
+                            <b>@lang('default.success')</b>
                         </div>
                     @endif
                     <form class="user" method="POST" action="{{ URL::to('/') }}/profile/update">

@@ -6,7 +6,7 @@ use App\Feedback;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class FeedbackController extends Controller
+class HelpController extends Controller
 {
     public function index() {
         return view('feedback');
