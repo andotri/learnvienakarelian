@@ -23,7 +23,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center">
-                                <img src="{{ asset('images/cultural_information/kalevala.jpg') }}" id="logo">
+                                <img src="{{ asset($picture) }}" id="logo">
                                 <br><br>
                                 {{ $description }}
                             </div>
