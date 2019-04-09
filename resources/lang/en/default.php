@@ -49,5 +49,6 @@ return [
 
     'title' => 'Title',
     'description' => 'Description',
+    'submit' => 'Submit',
     'messageSuccess' => 'Thanks for your message.',
 ];
