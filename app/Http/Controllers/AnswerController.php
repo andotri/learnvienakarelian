@@ -40,14 +40,14 @@ class AnswerController extends Controller
             else {
                 $description = $culturalInformation->finnish;
             }
-            $image = $culturalInformation->picture;
+            $picture = $culturalInformation->picture;
 
             if($answer) {
                 return view('notification', [
                     'type' => 'success',
                     'message' => trans('default.completedAllSkills'),
                     'description' => $description,
-                    'image' => $image,
+                    'picture' => $picture,
                 ]);
             }
             else {
