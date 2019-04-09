@@ -18,6 +18,7 @@ class CreateCulturalInformationTable extends Migration
 
             $table->string('english');
             $table->string('finnish');
+            $table->string('picture');
 
             $table->timestamps();
         });
