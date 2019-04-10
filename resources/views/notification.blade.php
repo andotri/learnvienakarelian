@@ -18,6 +18,17 @@
                         {{ $message }}
                     </div>
                     @isset($description)
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">100%</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                         <div class="card-header py-3 w-50 text-center" style="margin: 0 auto;">
                             <h6 class="m-0 font-weight-bold text-primary">@lang('default.doYouKnow?')</h6>
                         </div>
