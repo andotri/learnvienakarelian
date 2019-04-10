@@ -36,7 +36,7 @@
             @else
                 var answer = '{{ $learningObjective->finnish }}';
             @endif
-            if($('#writing').val().toUpperCase() == answer.toUpperCase()) {
+            if($('#writing').val().toUpperCase().trim() == answer.toUpperCase().trim()) {
                 alert("@lang('default.correct')");
                 window.location.href = "{{ URL::to('/') }}/answer?id={{ $userLearnedObjective->id }}&type=writing&answer=true";
             }
