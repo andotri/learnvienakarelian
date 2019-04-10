@@ -49,6 +49,10 @@
         font-size: 12.8px;
     }
 
+    th, td {
+        font-size: 11px;
+    }
+
     #logo-text {
         width: 125px;
     }
