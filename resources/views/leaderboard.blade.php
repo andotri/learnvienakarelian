@@ -20,7 +20,7 @@
                             <th scope="col">#</th>
                             <th scope="col">@lang('default.name')</th>
                             <th scope="col">@lang('default.weeklyScore')</th>
-                            <th scope="col">@lang('default.totalScore')</th>
+                            <th scope="col" class="smartphone-hide">@lang('default.totalScore')</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -29,7 +29,7 @@
                                 <th scope="row">{{ isset($_GET['page']) ? $loop->iteration + ($_GET['page'] - 1) * 10 : $loop->iteration}}</th>
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->weekly_score }}</td>
-                                <td>{{ $user->lifetime_score }}</td>
+                                <td class="smartphone-hide">{{ $user->lifetime_score }}</td>
                             </tr>
                         @endforeach
                         </tbody>
