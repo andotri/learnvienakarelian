@@ -40,9 +40,9 @@
     <script>
         function checkAnswer() {
             @if(Session::get('locale') === 'en')
-                var answer = '{{ $learningObjective->english }}';
+                var answer = "{!! $learningObjective->english !!}";
             @else
-                var answer = '{{ $learningObjective->finnish }}';
+                var answer = "{!! $learningObjective->finnish !!}";
             @endif
             if($('#writing').val().toUpperCase().trim() == answer.toUpperCase().trim()) {
                 alert("@lang('default.correct')");
