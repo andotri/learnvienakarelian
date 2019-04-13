@@ -31,6 +31,8 @@ return [
     'furniture' => 'Furniture',
     'season' => 'Seasons',
     'body' => 'Body',
+    'number' => 'Number',
+    'days_and_months' => 'Days and Months',
 
     'check' => 'Check',
     'correct' => 'Correct Answer!',

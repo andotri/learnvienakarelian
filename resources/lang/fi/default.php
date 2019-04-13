@@ -31,6 +31,8 @@ return [
     'furniture' => 'Huonekalut',
     'season' => 'Vuodenajat',
     'body' => 'Ruumiinosat',
+    'number' => 'Numerot',
+    'days_and_months' => 'Päiviä ja kuukausia',
 
     'check' => 'Tarkista',
     'correct' => 'Oikea vastaus!',

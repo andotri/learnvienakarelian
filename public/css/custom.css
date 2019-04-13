@@ -17,6 +17,7 @@ p {
 .picture {
     width: 150px;
     border-radius: 50%;
+    border-style: dotted;
 }
 
 .center {

@@ -75,19 +75,6 @@
                             </span>
                         </p>
                     </a>
-                    <!--
-                    <a href="{{ URL::to('/') }}/play/number">
-                        <p class="p-3 bg-gray-200 m-0">
-                            <span class="btn btn-success btn-circle btn-sm">
-                                <i class="fas fa-list-ol"></i>
-                            </span>
-                            Number
-                            <span style="float: right;">
-                                {!! $stars[4] !!}
-                            </span>
-                        </p>
-                    </a>
-                    -->
                     <a href="{{ URL::to('/') }}/play/body">
                         <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
@@ -99,19 +86,28 @@
                             </span>
                         </p>
                     </a>
-                    <!--
+                    <a href="{{ URL::to('/') }}/play/number">
+                        <p class="p-3 bg-gray-100 m-0">
+                            <span class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-list-ol"></i>
+                            </span>
+                            @lang('default.number')
+                            <span style="float: right;">
+                                {!! $stars[4] !!}
+                            </span>
+                        </p>
+                    </a>
                     <a href="{{ URL::to('/') }}/play/days_and_months">
                         <p class="p-3 bg-gray-200 m-0">
                             <span class="btn btn-success btn-circle btn-sm">
                                 <i class="fas fa-calendar-alt"></i>
                             </span>
-                            Days  and months
+                            @lang('default.days_and_months')
                             <span style="float: right;">
                                 {!! $stars[6] !!}
                             </span>
                         </p>
                     </a>
-                    -->
                 </div>
             </div>
 
