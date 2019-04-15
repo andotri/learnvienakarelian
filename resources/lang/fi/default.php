@@ -10,7 +10,7 @@ return [
     'iSpeakEnglish' => 'Puhun englantia',
     'iSpeakFinnish' => 'Puhun suomea',
     'playAsAnAnonymous' => 'Pelaa anonyyminä',
-    'update' => 'Päivittä',
+    'update' => 'Päivitä',
     'deleteMyAccount' => 'Poista minun tilini',
     'deleteConfirmation' => 'Haluatko varmasti poistaa tilin?',
     'namePlaceholder' => 'Nimeni on ...',
@@ -42,7 +42,7 @@ return [
     'selectPictureListening' => 'Valitse kuva, jonka kuulet.',
     'selectSentenceListening' => 'Valitse lause, jonka kuulet.',
 
-    'doYouKnow?' => 'Tiedätkö?',
+    'doYouKnow?' => 'Kulttuuritiedot',
     'completedTheLevel' => 'Palaa kotisivulle',
 
     'selectSentence' => 'Valitse oikea lause',

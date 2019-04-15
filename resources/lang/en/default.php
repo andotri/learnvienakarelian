@@ -42,7 +42,7 @@ return [
     'selectPictureListening' => 'Select a picture of that you hear.',
     'selectSentenceListening' => 'Select a sentence of that you hear.',
 
-    'doYouKnow?' => 'Do you know?',
+    'doYouKnow?' => 'Cultural Information',
     'completedTheLevel' => 'Go back to homepage',
 
     'selectSentence' => 'Select the correct sentence of',
